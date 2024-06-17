@@ -21,7 +21,9 @@ a {
 .news-block-one {
   display: flex;
 }
-
+.fb-page{
+  height: 600px;
+}
 .card1 {
   max-width: max-content;
   margin: 25px;
