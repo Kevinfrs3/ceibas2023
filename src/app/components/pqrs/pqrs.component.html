@@ -1,0 +1,49 @@
+<app-menu></app-menu>
+<section class="page-title centred" style="background-image:url(assets/images/background/PQRS.jpg)">
+</section>
+<div class="container mt-4" style="font-family: Arial, sans-serif;">
+    <nav arial-label="breadcrumb">
+        <ol class="breadcrumb"
+            style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+                    Inicio
+                </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                <a routerLink="/atencion-usuario" style="color: #17a2b8; text-decoration: none;">
+                    Atención al Usuario
+                </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+                Peticiones, Quejas, Reclamos y Solicitudes.
+            </li>
+        </ol>
+    </nav>
+</div>
+
+
+<div class="container">
+    <section class="faq-page-section">
+        <button
+            (click)="mostrarIframe('https://extranet.lasceibas.gov.co/Site.aspx?Codigo=D368389F-817B-4485-A1F0-B6C28E5F2532&p=/Radicar&Tipo=I', 'identificado')">Radicar
+            PQRS Identificado</button>
+        <button
+            (click)="mostrarIframe('https://extranet.lasceibas.gov.co/Site.aspx?Codigo=D368389F-817B-4485-A1F0-B6C28E5F2532&p=/Radicar&Tipo=A', 'anonimo')">Radicar
+            PQRS Anónimo</button>
+        <button
+            (click)="mostrarIframe('https://extranet.lasceibas.gov.co/site.aspx?Codigo=D368389F-817B-4485-A1F0-B6C28E5F2532', 'consulta')">Consulta
+            Estado PQRS</button>
+        <br>
+        <div class="iframe-container"><br>
+            <iframe *ngIf="iframeVisible === 'identificado'" [src]="urlIframeIdentificado" scrolling="auto"
+                class="iframe-identificado"></iframe>
+            <iframe *ngIf="iframeVisible === 'anonimo'" [src]="urlIframeAnonimo" scrolling="auto"
+                class="iframe-anonimo"></iframe>
+            <iframe *ngIf="iframeVisible === 'consulta'" [src]="urlIframeConsulta" scrolling="auto"
+                class="iframe-consulta"></iframe>
+        </div>
+    </section>
+</div>
+<app-menuinteres></app-menuinteres><br><br>
+<app-footer></app-footer>

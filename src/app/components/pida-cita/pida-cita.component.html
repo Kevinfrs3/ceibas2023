@@ -1,0 +1,107 @@
+<app-menu></app-menu>
+<section class="page-title centred" style="background-image:url(assets/images/background/banner\ pida\ una\ cita.jpg)">
+</section>
+<div class="container mt-4" style="font-family: Arial, sans-serif;">
+  <nav arial-label="breadcrumb">
+    <ol class="breadcrumb"
+      style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+      <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+        <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+          Inicio
+        </a>
+      </li>
+      <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+        <a routerLink="/transparenci" style="color: #17a2b8; text-decoration: none;">
+          Transparencia
+        </a>
+      </li>
+      <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+        Pida Una Cita
+      </li>
+    </ol>
+  </nav>
+</div><br>
+
+
+<section section class="google-map-section" style="display: flex; justify-content: center;">
+
+
+
+  <div class="container">
+    <form class="contact-form" accept-charset="UTF-8">
+      <div style="display: flex; justify-content: flex-end;"> <!-- Esto alinea el contenido a la derecha -->
+        <button class="btn btn-secondary" type="button" onclick="location.reload();">
+          Nueva Solicitud
+        </button>
+      </div>
+      <p>
+        ¡Gracias por tu interés en programar una cita con nosotros!
+      </p>
+      <p>
+        Por favor, completa el siguiente formulario con tus datos y tu fecha tentativa de visita. Nos pondremos en
+        contacto contigo por correo electrónico para confirmar la disponibilidad y para resolver cualquier pregunta que
+        puedas tener.
+      </p>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+
+          <label for="full-name">Nombres Completos <span class="required">*</span></label>
+          <input type="text" id="full-name" name="full-name" class="form-control" required [(ngModel)]="fullName"
+            (input)="fullName = fullName.toUpperCase()">
+
+
+
+        </div>
+        <div class="form-group col-md-6">
+
+          <label for="mobile">Teléfono Móvil <span class="required">*</span></label>
+          <input type="number" id="mobile" name="mobile" class="form-control" pattern="[0-9]+" inputmode="numeric"
+            required [(ngModel)]="mobile">
+
+
+        </div>
+      </div>
+      <div class="form-group">
+
+        <label for="email">Correo Electrónico <span class="required">*</span></label>
+        <input type="email" id="email" name="email" class="form-control" required [(ngModel)]="email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}">
+
+
+      </div>
+      <div class="form-group">
+        <label for="message">Motivo o Mensaje <span class="required">*</span></label>
+        <textarea id="message" name="message" class="form-control" rows="5" required [(ngModel)]="message"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="fecha-cita">Fecha de la Cita <span class="required">*</span></label>
+        <input type="date" id="fecha-cita" name="fecha-cita" class="form-control" required [(ngModel)]="citaDate"
+          [min]="minDate()">
+
+      </div>
+      <p>
+        Tu solicitud será enviada al equipo de LAS CEIBAS EMPRESAS PÚBLICAS DE NEIVA E.S.P, quienes estarán encantados
+        de responder a tus preguntas y ayudarte en lo que necesites.
+      </p>
+
+      <div class="text-center"> <!-- Este div centra horizontalmente su contenido -->
+        <button class="btn btn-primary mx-auto" type="button" [disabled]="!todosCamposLlenos()"
+          (click)="enviarCorreo()">
+          Enviar Solicitud por Correo Electrónico
+        </button>
+      </div>
+
+    </form>
+  </div>
+
+</section>
+<!--
+<br>
+<section class="google-map-section" style="display: flex; justify-content: center;">
+  <img src="../../../assets/images/sitio-web-construccion-laptop_24911-54687.avif">
+</section>
+<br>
+-->
+<br>
+<app-menuinteres></app-menuinteres><br><br>
+<app-footer></app-footer>

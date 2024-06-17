@@ -1,0 +1,42 @@
+.pagination-container {
+    display: flex;
+    flex-wrap: wrap; /* Esto permite que los elementos pasen a la siguiente línea si no caben */
+    justify-content: center; /* Esto centra los elementos en el contenedor */
+    max-width: 100%; /* Ajusta este valor según sea necesario */
+  }
+  
+  .page-item {
+    margin: 0 5px; /* Añade márgenes a los lados para separar los elementos */
+    cursor: pointer;
+  }
+  
+  .page-number {
+    font-size: 0.8em; /* Ajusta este valor según sea necesario */
+  }
+  
+  .auto-container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #00556a;
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,529 @@
+.cls-1 {
+  font-size: 18px;
+  font-family: Roboto-Bold, Roboto;
+  font-weight: 700;
+}
+
+.cls-2 {
+  letter-spacing: -0.02em;
+}
+
+.cls-3 {
+  letter-spacing: -0.01em;
+}
+
+.cls-4 {
+  letter-spacing: -0.01em;
+}
+
+.cls-5 {
+  font-size: 16px;
+  font-family: Roboto-Regular, Roboto;
+}
+
+.cls-6 {
+  letter-spacing: -0.01em;
+}
+
+.cls-7 {
+  letter-spacing: -0.01em;
+}
+
+.cls-8 {
+  letter-spacing: -0.02em;
+}
+
+.cls-9 {
+  letter-spacing: -0.01em;
+}
+
+.cls-10 {
+  letter-spacing: 0.01em;
+}
+
+.cls-11 {
+  letter-spacing: -0.01em;
+}
+
+.cls-12 {
+  letter-spacing: -0.04em;
+}
+
+.cls-13 {
+  letter-spacing: -0.02em;
+}
+
+.cls-14 {
+  letter-spacing: 0.01em;
+}
+
+.cls-15 {
+  letter-spacing: -0.01em;
+}
+
+.cls-16 {
+  letter-spacing: -0.06em;
+}
+
+.cls-17 {
+  letter-spacing: -0.02em;
+}
+
+.cls-18 {
+  letter-spacing: 0.01em;
+}
+
+.cls-19 {
+  letter-spacing: 0.02em;
+}
+
+.cls-20 {
+  letter-spacing: -0.01em;
+}
+
+.cls-21 {
+  letter-spacing: -0.03em;
+}
+.container {
+  width: 100%;
+  height: 480px;
+}
+#learn-more {
+  fill-opacity: 0;
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 2;
+  border-radius: 5px;
+  stroke-linejoin: round;
+  transition: all 250ms ease-in;
+  cursor: pointer;
+}
+#learn-more:hover {
+  fill-opacity: 1;
+}
+#learn-more:hover ~ .learn-more-text {
+  fill: #00556a;
+}
+.learn-more-text {
+  font-family: 'Roboto';
+  fill: #fff;
+  pointer-events: none;
+  font-size: 14px;
+  transition: all 250ms ease-in;
+}
+.center {
+  fill: #00556a;
+}
+.pointer {
+  fill: #fff;
+  stroke: #3b8fc0;
+  stroke-width: 2;
+}
+.nav-copy {
+  font-family: 'Roboto';
+  fill: #fff;
+  fill-opacity: 1;
+  transition: all 250ms ease-in;
+}
+.nav-copy.changing {
+  fill-opacity: 0;
+}
+.service {
+  cursor: pointer;
+}
+.service text {
+  font-size: 14px;
+  font-family: 'Roboto';
+  text-anchor: middle;
+}
+.service .icon-wrapper {
+  transform-origin: 50% 50%;
+}
+.service .icon-wrapper, .service .icon-wrapper > * {
+  transition: all 250ms ease-in;
+}
+.service circle {
+  fill: #005fa4;
+}
+.service circle.shadow {
+  fill-opacity: 0;
+  filter: url(#service-shadow);
+}
+.service use {
+  fill: #fff;
+}
+.service text {
+  fill: #4d4d4d;
+}
+.service.active .icon-wrapper, .service:hover .icon-wrapper {
+  transform: scale(1.15) translateY(-5px);
+}
+.service.active .icon-wrapper, .service.active .icon-wrapper > *, .service:hover .icon-wrapper, .service:hover .icon-wrapper > * {
+  transition: all 250ms ease-out;
+}
+.service.active .icon-wrapper circle.shadow, .service:hover .icon-wrapper circle.shadow {
+  fill-opacity: 0.4;
+}
+.service.active text, .service:hover text {
+  fill: #005fa4;
+  font-weight: bold;
+}
+
+/* Estilos politica de gestion */
+
+header {
+  background-color: #005081;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 25px;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.rombo {
+  position: relative;
+  margin: 0 20px;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.item {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  transform: translate(-35%, -35%) rotate(-45deg);
+  color: white;
+  font-size: 19px;
+  white-space: nowrap;
+  text-align: center;
+  padding: 10px;
+  width: 90px; /* Ajusta estos valores según el tamaño deseado para el rombo */
+  height: 90px;
+}
+
+.item img {
+  width: 90%;  /* Cambia estos valores para ajustar el tamaño de la imagen */
+  height: 90%; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Esta línea es para centrar la imagen aumentada en el div */
+}
+
+.bg-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir el área del rombo */
+}
+
+
+/*Dialogos*/
+
+/* ... Tus estilos previos ... */
+
+/* Estilos para los enunciados */
+.dialogo {
+  position: absolute;
+  font-size: 15px;
+  background-color: transparent;
+  text-align: center;
+  white-space: nowrap;
+  transform: rotate(315deg);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el diálogo hover */
+.dialogo:hover {
+  background-color: var(--hover-color); /* Usamos una variable CSS personalizada */
+  color: #fff;
+}
+
+
+
+/* Posiciones y estilos específicos de los diálogos */
+.dialogo-1a {
+  bottom: 100%;
+  left: 75%;
+  transform: translateX(-155%) rotate(315deg);
+  --hover-color: #c70163;
+}
+
+
+.dialogo-1b {
+  top: 100%;
+  left: -155%;
+  transform: translateX(170%) rotate(315deg);
+  --hover-color: #c70163;
+}
+
+.dialogo-2a {
+  bottom: 90%;
+  left: 90%;
+  transform: translateX(-170%) rotate(315deg);
+  --hover-color: #fe4143;
+}
+
+.dialogo-2b {
+  top: 85%;
+  left: -190%;
+  transform: translateX(190%) rotate(315deg);
+  --hover-color: #fe4143;
+}
+
+.dialogo-3a {
+  bottom: 85%;
+  left: 105%;
+  transform: translateX(-165%) rotate(315deg);
+  --hover-color: #ffb701;
+}
+
+.dialogo-3b {
+  top: 85%;
+  left: -40%;
+  transform: translateX(90%) rotate(315deg);
+  --hover-color: #ffb701;
+}
+
+.dialogo-4a {
+  bottom: 90%;
+  left: 70%;
+  transform: translateX(-150%) rotate(315deg);
+  --hover-color: #f9e201;
+}
+
+.dialogo-4b {
+  top: 95%;
+  left: -40%;
+  transform: translateX(85%) rotate(315deg);
+  --hover-color: #f9e201;
+}
+
+.dialogo-5a {
+  bottom: 100%;
+  left: 110%;
+  transform: translateX(-170%) rotate(315deg);
+  --hover-color: #67afae;
+}
+
+.dialogo-5b {
+  top: 90%;
+  left: 40%;
+  transform: translateX(20%) rotate(315deg);
+  --hover-color: #67afae;
+}
+
+.dialogo-6a {
+  bottom: 100%;
+  left: 100%;
+  transform: translateX(-170%) rotate(315deg);
+  --hover-color: #00c1c1;
+}
+
+.dialogo-6b {
+  top: 95%;
+  left: 60%;
+  transform: translateX(20%) rotate(315deg);
+  --hover-color: #00c1c1;
+}
+
+.dialogo-7a {
+  bottom: 90%;
+  left: 140%;
+  transform: translateX(-175%) rotate(315deg);
+  --hover-color: #00bfd1;
+}
+
+.dialogo-7b {
+  top: 90%;
+  left: 45%;
+  transform: translateX(15%) rotate(315deg);
+  --hover-color: #00bfd1;
+}
+
+.dialogo-8a {
+  bottom: 100%;
+  left: 55%;
+  transform: translateX(-120%) rotate(315deg);
+  --hover-color: #0082bc;
+}
+
+.dialogo-8b {
+  top: 72%;
+  left: 95%;
+  transform: translateX(10%) rotate(315deg);
+  --hover-color: #0082bc;
+}
+
+.dialogo-9a {
+  bottom: 95%;
+  left: 60%;
+  transform: translateX(-120%) rotate(315deg);
+  --hover-color: #005081;
+}
+
+.dialogo-9b {
+  top: 85%;
+  left: 80%;
+  transform: translateX(0%) rotate(315deg);
+  --hover-color: #005081;
+}
+
+.dialogo-10 {
+  top: 95%;
+  left: 80%;
+  transform: translateX(0%) rotate(315deg);
+  --hover-color: #004f67;
+}
+
+
+#contenedor-total {
+  
+display: flex;
+flex-wrap: nowrap; /* Evita que los rombos se envuelvan en varias filas */
+justify-content: center;
+align-items: center;
+height: 70vh;
+width: 70%; /* Ocupa todo el ancho disponible */
+overflow-x: auto; /* Agrega una barra de desplazamiento horizontal si los rombos no caben en la pantalla */
+}
+
+
+.rombo.rombo-1 {
+  margin-left: 50px;
+  background-color: #c70163; 
+}
+
+.rombo.rombo-2 {
+  background-color: #ff4143; 
+}
+
+.rombo.rombo-3 {
+  background-color: #ffb701; 
+}
+
+.rombo.rombo-4 {
+  background-color: #fae301; 
+}
+
+.rombo.rombo-5 {
+  background-color: #67afae;
+}
+
+.rombo.rombo-6 {
+  background-color: #00c1c1; 
+}
+
+.rombo.rombo-7 {
+  background-color: #00bfd1; 
+}
+
+.rombo.rombo-8 {
+  background-color: #0082bc; 
+}
+
+.rombo.rombo-9 {
+  background-color: #005081; 
+}
+
+.rombo.rombo-10 {
+  background-color: #004f67; 
+} 
+
+
+/*Responsive Rombos*/
+@media (max-width: 600px) {
+  #contenedor {
+    flex-direction: column;
+    height: auto; 
+    padding-bottom: 20px;
+  }
+  
+  .rombo {
+    margin: 170px auto; /* Aumentamos el valor del margen */
+    width: 60px;
+    height: 60px;
+  }
+
+  .item {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 70em) {
+  #contenedor {
+    flex-direction: column;
+    height: auto; 
+    padding-bottom: 20px;
+  }
+  
+  .rombo {
+    margin: 170px auto; /* Aumentamos el valor del margen */
+    width: 60px;
+    height: 60px;
+  }
+
+  .item {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+
+
+/* Contenedor Furag y Certificado */
+.rounded-section {
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centramos horizontalmente */
+  align-items: center; /* Centramos verticalmente */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.image-container img {
+  max-width: 70%; /* Disminuimos el tamaño máximo */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 10px; /* Agregamos un margen entre las imágenes */
+}
+
+.image-caption {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}  

@@ -1,0 +1,67 @@
+<div class="container mt-4" id="Encuestas">
+    <div id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button custom-accordion-button" type="button"
+                    (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed"
+                    aria-controls="collapseOne">
+                    <h4 class="custom-accordion-title"><img
+                            src="../../../../assets/images/icons/iconos-sistema-integrado/informe-anual.png" alt
+                            width="50px" height="50px" hspace="10px">2022</h4>
+                </button>
+            </h2>
+            <div id="collapseOne" [collapse]="isCollapsed" class="accordion-collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-accordion-body">
+                    <ul>
+                        <li><a href="../../../../assets/Archivos/informes-percepcion/03_Encuesta_de_Percepcion_Noviembre_2022_OK.pdf"
+                            target="_blank"><img src="assets/images/icons/pin.png" alt="circular interna "
+                                rel="noopener noferrer " width="20px" height="20px" />Encuesta de Percepción 2022</a></li>
+                    </ul>                
+                </div>
+            </div>
+        </div><br>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button custom-accordion-button" type="button"
+                    (click)="isCollapsed2 = !isCollapsed2" [attr.aria-expanded]="!isCollapsed2"
+                    aria-controls="collapseTwo">
+                    <h4 class="custom-accordion-title"><img
+                            src="../../../../assets/images/icons/iconos-sistema-integrado/informe-anual.png" alt=""
+                            width="50px" height="50px" hspace="10px">2021</h4>
+                </button>
+            </h2>
+            <div id="collapseTwo" [collapse]="isCollapsed2" class="accordion-collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-accordion-body">
+                    <ul>
+                        <li><a href="../../../../assets/Archivos/informes-percepcion/Encuesta_de_Percepcion_Atencion_al_Usuario_2021.pdf"
+                            target="_blank"><img src="assets/images/icons/pin.png" alt="circular interna "
+                                rel="noopener noferrer " width="20px" height="20px" />Encuesta de Percepción 2021</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><br>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button custom-accordion-button" type="button"
+                    (click)="isCollapsed3 = !isCollapsed3" [attr.aria-expanded]="!isCollapsed3"
+                    aria-controls="collapseThree">
+                    <h4 class="custom-accordion-title"><img
+                            src="../../../../assets/images/icons/iconos-sistema-integrado/informe-anual.png" alt=""
+                            width="50px" height="50px" hspace="10px">2020</h4>
+                </button>
+            </h2>
+            <div id="collapseThree" [collapse]="isCollapsed3" class="accordion-collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body custom-accordion-body">
+                    <ul>
+                        <li><a href="../../../../assets/Archivos/informes-percepcion/Encuesta_de_Percepcion_Noviembre_2020_OK.pdf"
+                            target="_blank"><img src="assets/images/icons/pin.png" alt="circular interna "
+                                rel="noopener noferrer " width="20px" height="20px" />Encuesta de Percepción 2020</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><br>
+    </div>
+</div>

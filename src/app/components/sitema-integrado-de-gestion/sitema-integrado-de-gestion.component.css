@@ -1,0 +1,278 @@
+.main-content {
+  flex: 1;
+  padding: 16px;
+  max-width: 1200px; /* establece un ancho máximo */
+  margin: 0 auto; /* centra el elemento en la pantalla */
+  justify-content: left;
+  align-items: left;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #07677d;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #e49c00;
+  margin-bottom: 1rem;
+  right: 70px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mat-drawer-container {
+  height: 100%;
+  justify-content: flex-start; /* alinear el contenido a la izquierda */
+}
+
+.mat-drawer-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-y: auto; /* agrega overflow-y: auto para permitir el scroll solo en el eje vertical */
+  justify-content: flex-start; /* alinear el contenido a la izquierda */
+}
+
+.mat-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.nav-list {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  width: 270px;
+}
+
+mat-sidenav-container {
+  height: calc(50% - 34px); /* Considera la altura de la barra de herramientas (mat-toolbar) */
+  display: flex;
+}
+
+mat-sidenav-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-top: 0px;
+  justify-content: left;
+  align-items: left;
+}
+
+mat-sidenav {
+  overflow-y: visible;
+  position: sticky;
+}
+
+
+
+.mat-list-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.mat-list-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.mat-expansion-panel-header-title,
+.mat-subheader {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  justify-content: left;
+  align-items: left;
+}
+
+.content {
+  justify-content: left;
+  align-items: left;
+  grid-template-columns: repeat(auto-fill, minmax(280px, max-content));
+}
+
+/* ... Resto del código ... */
+
+
+.pdf-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  max-width: 90%;
+  height: 70%;
+  margin-bottom: 10px;
+}
+
+.pdf-card mat-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #07677d;
+  text-align: center;
+  margin: 4px 10px;
+  line-height: 1.2;
+}
+
+.pdf-card mat-card-content {
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+  margin: 4px;
+  word-wrap: break-word;
+  line-height: 0.9;
+}
+
+
+.pdf-card mat-card-actions {
+  display: flex;
+  justify-content: center;
+}
+.pdf-card mat-card-actions button {
+  width: 100%;
+  max-width: 200px;
+}
+
+
+
+/* Reducir el tamaño de fuente para dispositivos móviles */
+@media (max-width: 767px) {
+  .pdf-card mat-card-title {
+    font-size: 20px;
+  }
+  .pdf-card mat-card-content {
+    font-size: 14px;
+  }
+}
+
+/* Ajustar el ancho mínimo en el media query para dispositivos móviles */
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 16px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .content {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}
+
+
+@media (min-width: 768px) {
+  .content {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+@media (min-width: 992px) {
+  .content {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+
+/* Estilos para los botones de menú */
+.icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+.menu-button {
+  cursor: pointer;
+  margin-right: 10px;
+}
+.menu-button:hover {
+  transform: scale(1.1);
+}
+
+.close-icon {
+  font-size: 1.6rem;
+  margin-left: 230px;
+  width: 25px;
+  height: 25px;
+  border: 0px solid #07677d;
+  background-color: #07677d;
+  border-radius: 0%;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/*Estilos titulos principales menu*/
+.title {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #07677d;
+  text-align: center;
+}
+
+.material-icons {
+  transition: transform 0.3s;
+}
+
+.material-icons.expanded {
+  transform: rotate(180deg);
+}
+
+
+/*ESTILOS BUSCADOR*/
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 5px;
+}

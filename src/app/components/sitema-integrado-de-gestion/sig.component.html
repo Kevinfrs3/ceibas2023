@@ -1,0 +1,187 @@
+<app-menu></app-menu>
+<section class="page-title centred" style="background-image:url(assets/images/background/banner\SIG1.jpg)">
+</section>
+<div class="container mt-4" style="font-family: Arial, sans-serif;">
+    <nav arial-label="breadcrumb">
+        <ol class="breadcrumb"
+            style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+                    Inicio
+                </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+                Sistema de Gestión Integral
+            </li>
+        </ol>
+    </nav>
+</div>
+
+<!--Contenido del Sistema de Gestión Integral-->
+<br>
+<section class="faq-page-section">
+    <div class="main-container container">
+        <div class="row">
+            <section class="col-sm-12">
+                <a id="main-content"></a>
+
+                <div class="region region-content">
+                    <section id="block-system-main" class="block block-system clearfix">
+
+                        <article about="/sistema-integrado-de-gestion" typeof="sioc:Item foaf:Document"
+                            class="node node-carpeta view-mode-full">
+
+                            <!-- Agregar el campo de búsqueda aquí -->
+                            <div class="search-bar"
+                                style="display: flex; align-items: center; background-color: #f2f2f2; border: 1px solid #ccc; border-radius: 4px; padding: 5px 10px;">
+                                <i class="fas fa-search" style="margin-right: 10px;"></i>
+                                <input type="text" [(ngModel)]="searchTerm"
+                                    placeholder="Busqueda de archivos por nombre..." (input)="filterFiles()"
+                                    style="flex-grow: 1; border: none; outline: none; font-size: 16px; padding: 5px;">
+                            </div>
+                            <p style="font-size: 12px; color: #666; margin-top: 5px;">Recuerda dejar en blanco el campo
+                                de búsqueda para navegar manualmente por todo el SIG.</p><br>
+
+
+
+                            <div class="row">
+                                <div class="col-sm-4 ">
+                                    <div class="field field-name-ceibas-folder-tree field-type-ds field-label-hidden">
+                                        <div class="field-items">
+                                            <div class="field-item even">
+                                                <!-- <ng-template #recursiveFolders let-folders>
+                                      <ul>
+                                          <li *ngFor="let item of folders; let i = index">
+                                              <a (click)="changeFolder(item.item.id)" [ngClass]="{'active': item.item.id == folderSelected}"><i class="fas fa-folder-open"></i> {{item.item.nombre}}</a>
+                                              <div *ngIf="item.children.length > 0">
+                                                  <ng-container *ngTemplateOutlet="recursiveFolders; context: {$implicit: item.children}"></ng-container>
+                                              </div>
+                                          </li>
+                                      </ul>
+                                  </ng-template>
+                                  <ng-container *ngTemplateOutlet="recursiveFolders; context: {$implicit: listFolders}"></ng-container> -->
+                                                <ejs-treeview #tree id="treeElement" [fields]="field"
+                                                    [allowMultiSelection]="false"
+                                                    (nodeSelected)="changeFolderTree($event)">
+                                                </ejs-treeview>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-8 ">
+                                    <div class="field field-name-nombre-cantidad field-type-ds field-label-hidden">
+                                        <div class="field-items">
+                                            <div class="field-item even">
+                                                <ng-container *ngIf="!isSearching; else searchResults">
+                                                    <div
+                                                        class="view view-documentos view-id-documentos view-display-id-block_2 view-dom-id-833acb3ee187109d1d81791db9f1b26f">
+                                                        <div class="view-content">
+                                                            <div
+                                                                class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+                                                                <h1 class="views-field views-field-title">Sistema
+                                                                    Integrado de Gestión</h1>
+                                                                <span class="views-field views-field-field-archivos">{{
+                                                                    (listFiles != null && listFiles != undefined) ?
+                                                                    listFiles.length : 0 }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ng-container>
+                                                <ng-template #searchResults>
+                                                    <!-- Mostrar los resultados de la búsqueda aquí -->
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="field field-name-ceibas-files-subfolders- field-type-ds field-label-hidden">
+                                        <div class="field-items">
+                                            <div class="field-item even">
+                                                <ng-container *ngIf="!isSearching; else searchResults">
+                                                    <div
+                                                        class="view view-ceibas-folder-views view-id-ceibas_folder_views view-display-id-block_1 view-dom-id-57f1cebe5569e83b8bd334f6053961a5">
+                                                        <div class="view-content">
+                                                            <div class="table-responsive">
+                                                                <table
+                                                                    class="views-table cols-0 table table-hover table-striped">
+                                                                    <tbody>
+                                                                        <tr class="{{ i % 2 == 0 ? 'odd' : 'even' }} {{ i == listSubFolders.length - 1 ? 'views-row-last' : '' }}"
+                                                                            *ngFor="let item of listSubFolders; let i = index">
+                                                                            <td class="views-field views-field-nothing">
+                                                                                <i class="fas fa-folder-open"></i>
+                                                                            </td>
+                                                                            <td class="views-field views-field-title">
+                                                                                <a (click)="changeFolder(item.id)">{{
+                                                                                    item.nombre }}</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ng-container>
+                                                <ng-template #searchResults>
+                                                    <!-- Mostrar los resultados de la búsqueda aquí -->
+                                                </ng-template>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="field field-name-field-archivos field-type-file field-label-hidden">
+                                        <div class="field-items">
+                                            <div class="field-item even">
+                                                <div class="table-responsive">
+                                                    <table class="sticky-header"
+                                                        style="position: fixed; top: 21px; left: 562.778px; visibility: hidden;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Adjunto</th>
+                                                                <th>Tamaño</th>
+                                                            </tr>
+                                                        </thead>
+                                                    </table>
+                                                    <table
+                                                        class="table table-hover table-striped sticky-enabled tableheader-processed sticky-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Adjunto</th>
+                                                                <th>Tamaño</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr *ngFor="let item of filteredFiles">
+                                                                <td>
+                                                                    <div style="display: flex; align-items: center;">
+                                                                        <a href="{{urlArchivo}}{{item.id}}"
+                                                                            style="text-decoration: none; color: #00556a; font-weight: bold; display: flex; align-items: center;"
+                                                                            onmouseover="this.style.color='#FF5733';"
+                                                                            onmouseout="this.style.color='#00556a';">
+                                                                            <i class="fas fa-file-pdf"
+                                                                                style="font-size: 24px; margin-right: 10px;"></i>
+                                                                            <span
+                                                                                style="font-size: 14px;">{{item.archivo}}</span>
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                                <td style="font-size: 14px; color: #00556a;">
+                                                                    {{item.peso}} Bytes</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<br>
+<app-menuinteres></app-menuinteres><br><br>
+<app-footer></app-footer>

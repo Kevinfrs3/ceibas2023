@@ -1,0 +1,107 @@
+<app-menu></app-menu>
+<section class="page-title centred" style="background-image:url(../../../assets/images/background/notificaciones.jpg)">
+</section>
+<section>
+    <div class="container mt-4" style="font-family: Arial, sans-serif;">
+        <nav arial-label="breadcrumb">
+            <ol class="breadcrumb"
+                style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+                <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                    <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+                        Inicio
+                    </a>
+                </li>
+                <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+                    Notificaciones
+                </li>
+            </ol>
+        </nav>
+    </div>
+</section>
+<section class="faq-page-section">
+
+
+
+    <div class="auto-container">
+        <div style="text-align: center; margin-bottom: 20px;">
+            <h1 style="color: #00556a; font-size: 2.5em;">Módulo de notificaciones por aviso</h1>
+            <p style="font-size: 1.2em;">Cumplimiento al artículo 69 - Ley 1437 de 2011</p>
+        </div><br>
+        <div style="display: flex; align-items: center; border: 2px solid #ccc; padding: 7px; border-radius: 7px;">
+            <i class="fa fa-search" aria-hidden="true" style="margin-right: 5px;"></i>
+            <input type="text" [(ngModel)]="searchQuery" (input)="search()" placeholder="Busqueda por nombre..."
+                style="border: none; outline: none;">
+        </div><br>
+        <div class="row align-items-center clearfix">
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
+                <div class="content_block_1">
+                    <div class="view-content" *ngIf="!loading; else loadingTemplate" class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Tipo Notificación</th>
+                                    <th>Nombre</th>
+                                    <th>No. Identificación</th>
+                                    <th>Radicado</th>
+                                    <th>Documento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let item of filteredListNotificaciones; let i = index">
+                                    <td>{{item.tipo_notificacion_id}}</td>
+                                    <td>{{item.nombre}}</td>
+                                    <td>{{item.identificacion}}</td>
+                                    <td>{{item.radicado}}</td>
+                                    <td><a href="{{urlArchivo}}notificacion/download/{{item.id}}" target="blank">Ver
+                                            Documento</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <ng-template #loadingTemplate>
+                        <div style="text-align: center; margin-top: 50px;">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <p style="font-size: 20px; color: #00556a;">Cargando registros de notificaciones por
+                                aviso...</p>
+                        </div>
+                    </ng-template>
+
+
+                    <!-- Esto es lo que sirve -->
+                    <div class="text-center" *ngIf="totalPages > 0">
+                        <nav aria-label="Page navigation" class="pagination-container">
+                            <ul class="pagination justify-content-center">
+
+
+
+                                <li class="page-item" [class.disabled]="currentPageGroupStart === 1">
+                                    <a class="page-link" title="Ir al grupo de páginas anterior"
+                                        (click)="previousPageGroup()">‹</a>
+                                </li>
+
+                                <li class="page-item" *ngFor="let page of getPageGroup(); index as i"
+                                    [class.active]="currentPage === page">
+                                    <a class="page-link" (click)="getNotificacionesPageable(page - 1)">{{page}}</a>
+                                </li>
+
+                                <li class="page-item"
+                                    [class.disabled]="currentPageGroupStart + pageGroupSize > totalPages">
+                                    <a class="page-link" title="Ir al grupo de páginas siguiente"
+                                        (click)="nextPageGroup()">›</a>
+                                </li>
+
+
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section><br><br><br>
+<app-menuinteres></app-menuinteres><br><br>
+<app-footer></app-footer>

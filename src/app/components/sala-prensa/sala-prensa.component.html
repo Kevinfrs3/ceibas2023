@@ -1,0 +1,85 @@
+<app-menu></app-menu>
+
+<section class="page-title centred" style="background-image:url(assets/images/background/sala-de-prensa1.jpg)">
+</section>
+<div class="container mt-4" style="font-family: Arial, sans-serif;">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb"
+      style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+      <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+        <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+          Inicio
+        </a>
+      </li>
+      <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+        Sala de Prensa
+      </li>
+    </ol>
+  </nav>
+</div>
+<!--
+<br>
+<section class="google-map-section" style="display: flex; justify-content: center;">
+  <img src="../../../assets/images/sitio-web-construccion-laptop_24911-54687.avif">
+</section>
+-->
+<header class="blog-header">
+  <div class="container">
+    <div class="header-content">
+      <h1 class="blog-title">¡Las Ceibas Empresas Públicas de Neiva!</h1>
+      <h2 class="blog-subtitle">Explora el presente y el futuro de nuestra ciudad</h2>
+      <a href="https://enterate.lasceibas.gov.co/" class="btn btn-primary" target="_blank">Descubre más</a>
+      <div class="btn-message">
+        <span class="animated infinite pulse">¡No te lo pierdas, visita nuestro nuevo portal de noticias!</span>
+      </div>
+    </div>
+  </div>
+</header>
+<br>
+<section class="google-map-section" style="padding: 30px;">
+  <h1 class="blog-title" style="text-align: center;">Infórmate y Conócenos</h1>
+  <div class="google-map-section">
+    <mat-paginator #newsPaginator [length]="totalPosts" [pageSize]="pageSize" [pageSizeOptions]="[3, 6, 9, 12]"
+  showFirstLastButtons (page)="changeNewsPage($event)"></mat-paginator>
+    <div class="row card-deck">
+      <div class="col-md-4" *ngFor="let post of pagedPosts">
+        <div class="card mb-4 shadow-sm shadow-lg" [ngClass]="{'featured-card': post.featured}">
+          <div class="card-img-top"
+            *ngIf="post._embedded && post._embedded['wp:featuredmedia'] && post._embedded['wp:featuredmedia'][0].source_url">
+            <img [src]="post._embedded['wp:featuredmedia'][0].source_url" alt="{{ post.title.rendered }}"
+              class="img-fluid" ng-animate-hover="zoom">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title my-2" [innerHTML]="post.title.rendered"></h3>
+            <p class="card-date">{{ post.date | date }}</p>
+            <ul class="card-tags">
+              <li *ngFor="let category of post.categories">{{ category.name }}</li>
+            </ul>
+            <a href="{{ post.link }}" target="_blank" class="btn btn-primary">Leer más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="blog-title" style="text-align: center;">Boletines Institucionales</h1>
+  <div class="google-map-section">
+    <mat-paginator #pdfPaginator [length]="totalPdfs" [pageSize]="pageSize" [pageSizeOptions]="[3, 6, 9, 12]"
+  showFirstLastButtons (page)="changePdfsPage($event)"></mat-paginator>
+    <div class="row card-deck">
+      <div class="col-md-4" *ngFor="let pdf of pagedPdfs">
+        <div class="card mb-4 shadow-sm shadow-lg">
+          <div class="card-img-top" *ngIf="pdf.thumbnailUrl">
+            <img [src]="pdf.thumbnailUrl" alt="Imagen previa del PDF" class="img-fluid" ng-animate-hover="zoom">
+          </div>
+          <div class="card-body">
+            <h2 class="card-title my-2">{{ pdf.title }}</h2>
+            <a [href]="pdf.pdfUrl" target="_blank" class="btn btn-primary">Ver PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-menuinteres></app-menuinteres>
+<br><br>
+<app-footer></app-footer>

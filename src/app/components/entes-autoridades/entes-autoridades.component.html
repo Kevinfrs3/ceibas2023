@@ -1,0 +1,52 @@
+<app-menu></app-menu>
+<section class="page-title centred"
+  style="background-image:url(assets/images/background/banner\ entes\ de\ control.jpg)">
+</section>
+<section>
+  <div class="container mt-4" style="font-family: Arial, sans-serif;">
+    <nav arial-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+                Inicio
+                </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+              <a routerLink="/transparenci" style="color: #17a2b8; text-decoration: none;">
+                Transparencia
+              </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+                Entes de Control
+            </li>
+        </ol>
+    </nav>
+  </div>
+</section>
+<section class=about-section>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h5 class="mb-4 texto-azul-corporativo">
+          A continuación, encontrará los entes y las autoridades que vigilan a la Alcaldía de Neiva. Al dar clic en el logo de la entidad podrá visualizar datos como el nombre, dirección, teléfono, email, enlace al sitio web, entre otros
+        </h5>
+      </div>
+    </div>
+  
+    <div class="ente-container">
+      <div *ngFor="let ente of entes" class="ente-card">
+        <a [href]="ente.url" target="_blank">
+          <img [src]="ente.logo" [alt]="ente.nombre" class="ente-logo">
+        </a>
+        <h6>{{ ente.nombre }}</h6>
+        <p>{{ ente.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+  
+
+  
+</section><br><br><br><br>
+<app-menuinteres></app-menuinteres><br><br>
+<app-footer></app-footer>

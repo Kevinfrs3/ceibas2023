@@ -1,0 +1,89 @@
+.custom-accordion-button {
+    background-color: #07677d; /* Cambiado a #07677d */
+    color: white;
+    font-weight: bold;
+    border-color: #07677d;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .custom-accordion-button:hover {
+    background-color: #054c5a; /* Cambiado a un tono más oscuro de #07677d */
+    box-shadow: 0 6px 8px rgba(255, 255, 255, 0.15);
+  }
+  
+  
+  .custom-accordion-button::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+  
+  .custom-accordion-body {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .custom-accordion-title {
+    color: white;
+    font-weight: bold;
+    padding: 4px 4px;
+    display: inline-block;
+    border-radius: 2px;
+  }
+  
+  
+  .custom-accordion-title img {
+    margin-right: 20px;
+  }
+    
+  .rotado {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-out;
+    color: #000000; /* Color del ícono en estado normal */
+  }
+  
+  .acordeon-boton:hover .rotado,
+  .acordeon-boton:focus .rotado {
+    color: #000000; /* Color del ícono cuando se pasa el cursor por encima o se enfoca el botón */
+  }
+  
+  .acordeon-boton {
+    /* ...otros estilos... */
+    background-color: #FFFFFF; /* Color de fondo del botón */
+    border: 1px solid #000000; /* Borde del botón */
+    border-radius: 1px; /* Esquinas redondeadas del botón */
+    padding: 2px; /* Relleno alrededor del ícono */
+    outline: none; /* Quitar el contorno predeterminado */
+  }
+  
+  :root {
+    --transition-duration: 0.3s;
+    --max-height-acordeon: 500px;
+  }
+  
+  .acordeon-contenido {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height var(--transition-duration) ease-out;
+  }
+  
+  .desplegado {
+    max-height: var(--max-height-acordeon);
+  }

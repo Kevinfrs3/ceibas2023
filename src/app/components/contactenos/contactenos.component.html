@@ -1,0 +1,117 @@
+<app-menu></app-menu>
+<section class="page-title centred" style="background-image:url(assets/images/background/contactenos.jpg)">
+</section>
+<div class="container mt-4" style="font-family: Arial, sans-serif;">
+  <nav arial-label="breadcrumb">
+    <ol class="breadcrumb"
+      style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+      <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+        <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+          Inicio
+        </a>
+      </li>
+      <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+        Contáctenos
+      </li>
+    </ol>
+  </nav>
+</div>
+<section class="contact-style-two">
+  <div class="auto-container">
+    <div class="row clearfix">
+      <div class="col-lg-5 col-md-12 col-sm-12 info-column">
+        <div class="info-inner">
+          <div class="shape" style="background-image:url(assets/images/shape/shape-42.png)"></div>
+          <ul class="info-list clearfix">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <h5>Sede principal</h5>
+              <p>Carrera 6 # 6 - 02 <br />Horario de Atención<br> Lunes a Viernes de<br> 7:00 AM a 3:00 PM </p>
+            </li>
+            <li>
+              <i class="fas fa-envelope-open"></i>
+              <h5>Envíenos un correo electrónico</h5>
+              <p><a href="mailto:atencion.comercial@lasceibas.gov.co">atencion.comercial@lasceibas.gov.co</a><br /><a
+                  href="mailto:info@lasceibas.gov.co">info@lasceibas.gov.co</a></p>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <h5>Contact Center</h5>
+              <p><a href="tel:116">Línea de atención: 116</a><br><a href="https://wa.me/573330334116" target="_blank"
+                  rel="noopener noferrer">WhatsApp: 333 033 4116</a></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 col-sm-12 form-column">
+        <div class="form-inner">
+          <h3>Déjanos tus comentarios</h3>
+          <form method="post" action="envio.php" id="contact-form" class="default-form">
+            <div class="row clearfix">
+              <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                <input type="text" id="txtNombre" name="txtNombre" class="form-control" placeholder="Nombre" required>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                <input type="email" id="txtEmail" name="txtEmail" class="form-control" placeholder="Correo" required>
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input type="text" id="txtNumero" name="txtNumero" class="form-control" required
+                  placeholder="Número de celular">
+              </div>
+              <div class="col-lg-6 col-md-12 col-sm-12 form-group">
+                <input type="text" id="txtAsunto" name="txtAsunto" class="form-control " required placeholder="Asunto">
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                <textarea name="txtMensaje" s id="txtMensaje" placeholder="Mensaje"></textarea>
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="idTyC">
+                <label for="idTyC">
+                  Acepto los <a href="https://www.gov.co/terminos-y-condiciones" style="color:#13508c">
+                    <strong>términos y condiciones para el tratamiento de los datos personales</strong>
+                  </a>
+                </label>
+              </div>
+              <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
+                <button class="theme-btn btn-one" type="submit" name="submit-form">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="google-map-section">
+  <div class="auto-container">
+    <div class="map-inner text-center" id="mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.618088431026!2d-75.28925328478417!3d2.925631397869145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3b747ba39ee4ab%3A0x21834220c0d11a!2sCl.%206%20%236-02%2C%20Neiva%2C%20Huila!5e0!3m2!1ses!2sco!4v1678909758308!5m2!1ses!2sco"
+        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<section class="google-map-section" id="pagos">
+
+  <h2 class="slider-title">Puntos de pago autorizados</h2>
+  <p class="slider-message">Hemos puesto a disposición los siguientes puntos físicos de pago para su comodidad</p>
+
+  <owl-carousel-o [options]="carouselOptions" class="owl-theme">
+    <ng-container *ngFor="let slide of slides">
+      <ng-template carouselSlide>
+        <div class="slide-item">
+          <img [src]="slide.image" alt="Slide Image">
+          <div class="image-caption">{{ slide.caption }}</div>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+
+
+</section><br><br>
+
+
+<app-menuinteres></app-menuinteres><br><br>
+<app-footer></app-footer>

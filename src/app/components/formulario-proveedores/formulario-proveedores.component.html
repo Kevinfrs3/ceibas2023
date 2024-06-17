@@ -1,0 +1,368 @@
+<app-menu></app-menu>
+<section class="page-title centred"
+    style="background-image:url(assets/images/background/banner\ registro\ de\ proveedores.jpg)">
+</section>
+<div class="container mt-4" style="font-family: Arial, sans-serif;">
+    <nav arial-label="breadcrumb">
+        <ol class="breadcrumb"
+            style="background-color: #ffffff; border-radius: 0; padding: 8px 16px; border-left: 5px solid #17a2b8;">
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                <a routerLink="/inicio" style="color: #17a2b8; text-decoration: none;">
+                    Inicio
+                </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                <a routerLink="/contratacion" style="color: #17a2b8; text-decoration: none;">
+                    Contratación
+                </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; font-weight: bold;">
+                <a routerLink="/registro-proveedores" style="color: #17a2b8; text-decoration: none;">
+                    Proveedores
+                </a>
+            </li>
+            <li class="breadcrumb-item" style="font-size: 22px; color: #6c757d; font-weight: bold;">
+                Registrar Proveedor
+            </li>
+        </ol>
+    </nav>
+</div>
+
+<section class="faq-page-section">
+    <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1 class="page-header">Registrar Proveedor</h1>
+            <button onclick="location.href='./formulario-proveedores'" 
+                    style="font-size: 16px; padding: 10px 20px; background-color: #4CAF50; 
+                    color: white; border: none; cursor: pointer;">CREAR NUEVO PROVEEDOR</button>
+        </div>
+        <div class="wrapper-detail">
+            <form class="user-info-from-cookie proveedor proveedor-processed" [formGroup]="frm" (submit)="guardar()"
+                id="user-register-form">
+
+                <div class="form-container">
+                    <div id="edit-account" class="form-wrapper form-group">
+                        <input class="username" title="" data-toggle="tooltip" type="hidden" name="name"
+                            value="email_registration_8UXRDiDLM6"
+                            data-original-title="Se permiten espacios en blanco. No se permiten signos de puntuación excepto los puntos, guiones, comillas simples (apóstrofos) y guiones bajos,">
+                        <div class="form-item form-item-mail form-type-textfield form-group">
+                            <label class="control-label" for="edit-mail">Correo electrónico <span class="form-required"
+                                    title="Este campo es obligatorio.">*</span></label>
+                            <input class="form-control form-text required" type="text" id="edit-mail" name="mail"
+                                value="" size="60" maxlength="254" formControlName="email">
+                            <div class="help-block">Dirección de correo electrónico válida. Todos los
+                                correos
+                                electrónicos del sistema serán enviados a esta dirección. Esta dirección no
+                                se
+                                hará
+                                pública y sólo será utilizada si deseas recibir una contraseña nueva o si
+                                decides
+                                suscribirte a noticias y notificaciones por correo electrónico.</div>
+                        </div>
+                    </div>
+                    <div class="field-type-text field-name-field-nombre-razon-social field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-nombre-razon-social">
+                        <div id="profile-proveedor-field-nombre-razon-social-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-nombre-razon-social-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-nombre-razon-social-und-0-value">Nombre
+                                    -
+                                    Razón
+                                    Social <span class="form-required"
+                                        title="Este campo es obligatorio.">*</span></label>
+                                <input class="text-full form-control form-text required" type="text"
+                                    id="edit-profile-proveedor-field-nombre-razon-social-und-0-value"
+                                    name="profile_proveedor[field_nombre_razon_social][und][0][value]" value=""
+                                    size="60" maxlength="255" formControlName="nombre">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <div class="field-type-text field-name-field-nombre-comercial field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-nombre-comercial">
+                        <div id="profile-proveedor-field-nombre-comercial-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-nombre-comercial-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-nombre-comercial-und-0-value">Nombre
+                                    Comercial
+                                </label>
+                                <input class="text-full form-control form-text" type="text"
+                                    id="edit-profile-proveedor-field-nombre-comercial-und-0-value"
+                                    name="profile_proveedor[field_nombre_comercial][und][0][value]" value="" size="60"
+                                    maxlength="255" formControlName="nombre_comercial">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-type-list-text field-name-field-tipo-persona field-widget-options-buttons form-wrapper form-group"
+                        id="edit-profile-proveedor-field-tipo-persona">
+                        <div
+                            class="form-item form-item-profile-proveedor-field-tipo-persona-und form-type-radios form-group">
+                            <label class="control-label" for="edit-profile-proveedor-field-tipo-persona-und">Tipo de
+                                persona <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+                            <div id="edit-profile-proveedor-field-tipo-persona-und" class="form-radios">
+                                <div
+                                    class="form-item form-item-profile-proveedor-field-tipo-persona-und form-type-radio radio">
+                                    <label class="control-label"
+                                        for="edit-profile-proveedor-field-tipo-persona-und-natural"><input type="radio"
+                                            id="edit-profile-proveedor-field-tipo-persona-und-natural"
+                                            name="profile_proveedor[field_tipo_persona][und]" value="natural"
+                                            class="form-radio"> Persona Natural </label>
+                                </div>
+                                <div
+                                    class="form-item form-item-profile-proveedor-field-tipo-persona-und form-type-radio radio">
+                                    <label class="control-label"
+                                        for="edit-profile-proveedor-field-tipo-persona-und-juridica"><input type="radio"
+                                            id="edit-profile-proveedor-field-tipo-persona-und-juridica"
+                                            name="profile_proveedor[field_tipo_persona][und]" value="juridica"
+                                            class="form-radio"> Persona Jurídica </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-container">
+
+                    <mat-form-field appearance="fill" class="form-group custom-width">
+                        <mat-label>Tipo de documento</mat-label><br>
+                        <mat-select class="form-control required" id="edit-profile-proveedor-field-tipo-documento-und"
+                            name="profile_proveedor[field_tipo_documento][und]" formControlName="tipo_documento_id">
+                            <mat-option value="19">CC</mat-option>
+                            <mat-option value="20">CE</mat-option>
+                            <mat-option value="25">NIT</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+                    <div class="field-type-text field-name-field-documento-identificacion field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-documento-identificacion">
+                        <div id="profile-proveedor-field-documento-identificacion-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-documento-identificacion-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-documento-identificacion-und-0-value">Documento
+                                    de
+                                    Identificación <span class="form-required"
+                                        title="Este campo es obligatorio.">*</span></label>
+                                <input class="text-full form-control form-text required" type="text"
+                                    id="edit-profile-proveedor-field-documento-identificacion-und-0-value"
+                                    name="profile_proveedor[field_documento_identificacion][und][0][value]" value=""
+                                    size="60" maxlength="255" formControlName="identificacion">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-container">
+
+                    <div class="field-type-text field-name-field-representante-legal field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-representante-legal">
+                        <div id="profile-proveedor-field-representante-legal-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-representante-legal-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-representante-legal-und-0-value">Representante
+                                    Legal
+                                </label>
+                                <input class="text-full form-control form-text" type="text"
+                                    id="edit-profile-proveedor-field-representante-legal-und-0-value"
+                                    name="profile_proveedor[field_representante_legal][und][0][value]" value=""
+                                    size="60" maxlength="255" formControlName="representante_legal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-type-text field-name-field-documento-identificaci-rep field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-documento-identificaci-rep">
+                        <div id="profile-proveedor-field-documento-identificaci-rep-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-documento-identificaci-rep-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-documento-identificaci-rep-und-0-value">Documento
+                                    de
+                                    identificación del representante legal </label>
+                                <input class="text-full form-control form-text" type="text"
+                                    id="edit-profile-proveedor-field-documento-identificaci-rep-und-0-value"
+                                    name="profile_proveedor[field_documento_identificaci_rep][und][0][value]" value=""
+                                    size="60" maxlength="255" formControlName="identificacion_representante_legal">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-container">
+
+                    <mat-form-field appearance="fill" class="form-group custom-width">
+                        <mat-label>Ubicación</mat-label><br>
+                        <mat-select class="form-control required" id="edit-profile-proveedor-field-ubicacion-und"
+                            name="profile_proveedor[field_ubicacion][und]" formControlName="municipio_id">
+                            <mat-option value="3859">Amazonas</mat-option>
+                            <mat-option value="3853">Antioquia</mat-option>
+                            <mat-option value="3860">Arauca</mat-option>
+                            <mat-option value="3861">Atlántico</mat-option>
+                            <mat-option value="3854">Bogotá D.C.</mat-option>
+                            <mat-option value="3855">Bolívar</mat-option>
+                            <mat-option value="3856">Boyacá</mat-option>
+                            <mat-option value="3862">Caldas</mat-option>
+                            <mat-option value="21">Caquetá</mat-option>
+                            <mat-option value="3863">Casanare</mat-option>
+                            <mat-option value="3857">Cauca</mat-option>
+                            <mat-option value="3864">Cesar</mat-option>
+                            <mat-option value="3865">Chocó</mat-option>
+                            <mat-option value="3866">Córdoba</mat-option>
+                            <mat-option value="3858">Cundinamarca</mat-option>
+                            <mat-option value="3867">Guainía</mat-option>
+                            <mat-option value="3868">Guaviare</mat-option>
+                            <mat-option value="33">Huila</mat-option>
+                            <mat-option value="3869">La Guajira</mat-option>
+                            <mat-option value="3870">Magdalena</mat-option>
+                            <mat-option value="3871">Meta</mat-option>
+                            <mat-option value="3872">Nariño</mat-option>
+                            <mat-option value="3873">Norte de Santander</mat-option>
+                            <mat-option value="3874">Putumayo</mat-option>
+                            <mat-option value="3875">Quindío</mat-option>
+                            <mat-option value="3876">Risaralda</mat-option>
+                            <mat-option value="3877">San Andrés y Providencia</mat-option>
+                            <mat-option value="3878">Santander</mat-option>
+                            <mat-option value="3879">Sucre</mat-option>
+                            <mat-option value="34">Tolima</mat-option>
+                            <mat-option value="3880">Valle del Cauca</mat-option>
+                            <mat-option value="3881">Vaupés</mat-option>
+                            <mat-option value="3882">Vichada</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+
+
+                    <div class="field-type-text field-name-field-direccion field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-direccion">
+                        <div id="profile-proveedor-field-direccion-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-direccion-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-direccion-und-0-value">Dirección
+                                    correspondencia
+                                    <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+                                <input class="text-full form-control form-text required" type="text"
+                                    id="edit-profile-proveedor-field-direccion-und-0-value"
+                                    name="profile_proveedor[field_direccion][und][0][value]" value="" size="60"
+                                    maxlength="255" formControlName="direccion">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-container">
+
+                    <div class="field-type-text field-name-field-telefono field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-telefono">
+                        <div id="profile-proveedor-field-telefono-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-telefono-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-telefono-und-0-value">Teléfono
+                                    fijo <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+                                <input class="text-full form-control form-text required" type="text"
+                                    id="edit-profile-proveedor-field-telefono-und-0-value"
+                                    name="profile_proveedor[field_telefono][und][0][value]" value="" size="60"
+                                    maxlength="255" formControlName="telefono">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field-type-text field-name-field-celular field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-celular">
+                        <div id="profile-proveedor-field-celular-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-celular-und-0-value form-type-textfield form-group">
+                                <label class="control-label"
+                                    for="edit-profile-proveedor-field-celular-und-0-value">Celular
+                                </label>
+                                <input class="text-full form-control form-text" type="text"
+                                    id="edit-profile-proveedor-field-celular-und-0-value"
+                                    name="profile_proveedor[field_celular][und][0][value]" value="" size="60"
+                                    maxlength="255" formControlName="celular">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-container">
+
+                    <div class="field-type-text field-name-field-clave field-widget-text-textfield form-wrapper form-group"
+                        id="edit-profile-proveedor-field-clave">
+                        <div id="profile-proveedor-field-clave-add-more-wrapper">
+                            <div
+                                class="form-item form-item-profile-proveedor-field-clave-und-0-value form-type-textfield form-group">
+                                <label class="control-label" for="edit-profile-proveedor-field-calve-und-0-value">Clave
+                                </label>
+                                <input class="text-full form-control form-text" type="text"
+                                    id="edit-profile-proveedor-field-clave-und-0-value"
+                                    name="profile_proveedor[field_celular][und][0][value]" value="" size="60"
+                                    maxlength="255" formControlName="clave">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="field-type-list-text field-name-field-tipo-inscripcion field-widget-options-buttons form-wrapper form-group"
+                        id="edit-profile-proveedor-field-tipo-inscripcion">
+                        <div
+                            class="form-item form-item-profile-proveedor-field-tipo-inscripcion-und form-type-checkboxes form-group">
+                            <label class="control-label" for="edit-profile-proveedor-field-tipo-inscripcion-und">Tipo
+                                de
+                                inscripción <span class="form-required"
+                                    title="Este campo es obligatorio.">*</span></label>
+                            <div id="edit-profile-proveedor-field-tipo-inscripcion-und" class="form-radios">
+                                <div class="form-item form-type-radio radio"
+                                    *ngFor="let item of listTipoProveedor; let i = index"> <label class="control-label"
+                                        for="{{item.id}}"><input type="radio" id="{{item.id}}" name="tipo_proveedor_id"
+                                            value="{{ item.id }}" class="form-radio" formControlName="tipo_proveedor_id"
+                                            (change)="cargarPreguntas(item.id)"> {{item.nombre}} </label></div>
+                                <!-- <div class="form-item form-type-radio radio"> <label class="control-label" for=""><input type="radio" id="" name="tipo_proveedor" value="2" class="form-radio" formControlName="tipo_proveedor_id">Proponente </label></div>
+                                <div class="form-item form-type-radio radio"> <label class="control-label" for=""><input type="radio" id="" name="tipo_proveedor" value="3" class="form-radio" formControlName="tipo_proveedor_id">Prestador de servicio </label></div> -->
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="field-type-file field-widget-file-generic form-wrapper form-group"
+                    id="edit-profile-proveedor-field-documento-representante"
+                    *ngFor="let item of listPreguntas; let i = index">
+                    <div class="form-item form-type-managed-file form-group">
+                        <label class="control-label">{{item.nombre}}</label>
+                        <div class="file-widget form-managed-file clearfix input-group">
+                            <input class="form-control form-file" type="file" size="22"
+                                (change)="changeFile($event, item.id)">
+                        </div>
+                        <div class="help-block">
+                            <a href="http://localhost/proveedor/register#" data-toggle="popover"
+                                data-target="#upload-instructions--3" data-html="1" data-placement="bottom"
+                                data-title="File requirements" data-original-title="" title=""><span
+                                    class="icon glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                                Más
+                                información</a>
+                            <div id="upload-instructions--3" class="element-invisible help-block">
+                                <ul>
+                                    <li>Los archivos deben ser menores que <strong>200 MB</strong>.</li>
+                                    <li>Tipos de archivo permitidos: <strong>pdf</strong>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions form-wrapper form-group form-container" id="edit-actions"><button type="submit"
+                        id="edit-submit" name="op" value="Crear nueva cuenta" class="btn btn-success form-submit">Crear
+                        nueva cuenta</button></div>
+            </form>
+        </div>
+    </div>
+</section><br><br>
+<app-menuinteres></app-menuinteres><br><br>
+<app-footer></app-footer>

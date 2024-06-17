@@ -1,0 +1,90 @@
+/* Estilos para centrar el contenido y dar estilo a los botones */
+.faq-page-section {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
+  /* Ancho máximo para centrar el contenido */
+}
+
+button {
+  background-color: #00556a;
+  /* Color de fondo del botón */
+  color: #fff;
+  /* Color del texto del botón */
+  padding: 10px 20px;
+  /* Espaciado interno del botón */
+  margin: 10px;
+  /* Margen exterior del botón */
+  border: none;
+  /* Borde del botón */
+  cursor: pointer;
+  /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 5px;
+  /* Bordes redondeados del botón */
+  font-size: 16px;
+  /* Tamaño de fuente del botón */
+}
+
+button:hover {
+  background-color: #95bd21;
+  /* Cambia el color de fondo al pasar sobre el botón */
+}
+
+/* Estilos para el iframe */
+/* Estilos para el contenedor de los iframes */
+.iframe-container {
+  width: 100%;
+  max-width: 100%;
+  /* Ancho máximo para el iframe */
+  overflow: hidden;
+  /* Oculta la barra de desplazamiento del iframe */
+}
+
+/* Estilos específicos para cada iframe */
+
+iframe.iframe-identificado {
+  display: block;
+  width: 100%;
+  height: 1600px;
+  border: none;
+}
+
+iframe.iframe-anonimo {
+  display: block;
+  width: 100%;
+  height: 650px;
+  border: none;
+}
+
+
+iframe.iframe-consulta {
+  display: block;
+  width: 100%;
+  height: 900px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+
+  /* Estilos para pantallas pequeñas (ajusta según tus necesidades) */
+  iframe.iframe-identificado {
+    display: block;
+    width: 100%;
+    height: 750vw;
+    border: none;
+  }
+
+  iframe.iframe-anonimo {
+    display: block;
+    width: 100%;
+    height: 200vw;
+    border: none;
+  }
+
+  iframe.iframe-consulta {
+    display: block;
+    width: 100%;
+    height: 450vw;
+    border: none;
+  }
+}

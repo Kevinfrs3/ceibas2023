@@ -1,0 +1,105 @@
+.about-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  flex-grow: 1;
+}
+
+.card-text {
+  margin-bottom: 15px;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.featured-card {
+  border: 2px solid red; /* Ejemplo de estilo para resaltar las tarjetas destacadas */
+  /* Agrega otros estilos para las tarjetas destacadas según tus preferencias */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+  .card {
+    height: auto;
+  }
+}
+
+
+  /*HEADER*/
+  .blog-header {
+    background-color: #f9f9f9;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .header-content {
+    margin-bottom: 0px;
+  }
+  
+  .blog-title {
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2; /* Ajusta este valor según la legibilidad deseada */
+  }
+  
+  .blog-subtitle {
+    font-size: 28px;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  .btn-primary {
+    background-color: #00556a;
+    border-color: #00556a;
+    padding: 10px 16px;
+    font-size: 15px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #95bd21;
+    border-color: #95bd21;
+  }
+  
+
+  .btn-message {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .btn-message span {
+    font-size: 18px;
+    color: #555;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

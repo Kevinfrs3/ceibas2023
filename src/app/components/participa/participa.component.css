@@ -1,0 +1,181 @@
+.list {
+  padding: 0;
+  width: 80%; 
+  box-sizing: border-box;
+  margin: 0 auto;  /* Esto centra la lista horizontalmente */
+}
+
+  .list-item {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+  
+  .list-item a {
+    display: block;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background-color: #f0f0f0;
+    padding: 0.5em;
+    border-radius: 10px;
+  }
+  
+  .list-item a:hover {
+    color: #fff;
+    background-color: #007fad;
+  }
+  
+  .card-body {
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5em;
+    color: #007fad;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .card {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    width: 80%; /* o puedes establecer un tamaño fijo como 250px */
+    margin: 0 auto; /* Centra la tarjeta si reduces su ancho */
+    padding: 10px; /* Ajusta el espacio interno según tu preferencia */
+  }
+  
+  .card:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+  }
+  
+  li {
+    text-align: center;
+  }
+  p {
+    margin: 0 auto;
+  }
+    
+/*NUEVOS ESTILOS TARJETAS DESCRIPCION*/
+
+.card {
+  position: relative;
+  border: none;
+  box-shadow: 0px 4px 10px rgba(0, 85, 106, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  transition: transform 0.3s;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 85, 106, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.card-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 85, 106, 0.8);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-description p {
+  color: #fff;
+}
+
+.card:hover .card-description {
+  opacity: 1;
+}
+
+.card-description p {
+  color: #fff;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.5; /* Ajusta este valor según lo que necesites */
+  margin-bottom: 20px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #00556a;
+  color: #fff;
+  border: 2px solid #ffffff; /* Agrega el borde blanco */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #003644;
+}
+
+
+/*ESTILOS CONTENIDO DE TARJETAS*/
+
+.close-button {
+  background-color: #00556a; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 12px 24px; /* Espaciado interno aumentado */
+  font-size: 18px; /* Tamaño de letra aumentado */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  display: block; /* Hace que el botón sea un bloque */
+  margin: 0 auto; /* Centra el botón horizontalmente */
+}
+
+.close-button:hover {
+  background-color: #45a049; /* Color de fondo al pasar por encima */
+}
+

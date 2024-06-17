@@ -1,0 +1,12 @@
+.language-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .language-container button {
+    margin-right: 10px;
+    background-color: transparent; /* Quitar el color de fondo del botón */
+    border: none; /* Quitar el borde del botón si es necesario */
+    color: inherit; /* Mantener el color del texto heredado */
+  }
+  
