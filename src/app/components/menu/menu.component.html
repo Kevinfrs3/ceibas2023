@@ -136,3 +136,47 @@
     </nav>
   </div>
 </div>
+
+<button class="floating-button" (click)="toggleInfo()">
+  <mat-icon></mat-icon>
+</button>
+
+<div class="info" *ngIf="showInfo">
+  <div>
+    <div class="d-flex justify-content-between">
+      <img src="../../../assets/images/logo-chat-ceibas.png" alt="Logo" />
+      <button
+        type="button"
+        class="btn-close fs-5"
+        aria-label="Close"
+        (click)="toggleInfo()"
+      ></button>
+    </div>
+    <h2>Bienvenidos a las Ceibas E.S.P</h2>
+    <h3>
+      Mejoramos nuestros medios de comunicación<br />dando así un mejor servicio
+    </h3>
+  </div>
+  <div class="step1_wrapper three_messenger_textus_livechat">
+    <a href="./pqrs" rel="noopener noferrer">
+      <button class="chat_now_btn nav-link">PQRSDF</button></a
+    >
+    <a
+      href="https://wa.me/573247669054"
+      target="_blank"
+      rel="noopener noferrer"
+      target="_blank "
+      rel="noopener noferrer"
+    >
+      <button class="chat_now_btn nav-link">WhatsApp</button></a
+    >
+
+    <!-- <a href="https://dattachat.com/chat/loadchat/?wid=5e9e348f8b668541657774&sid=422R51q7vO414ds761Ss&host=portal.lasceibas.gov.co"
+      target="_blank " rel="nooperner noferrer">
+      <button disabled class="chat_now_btn nav-link">Chat en Vivo</button></a> -->
+
+    <button class="chat_now_btn nav-link text-white" (click)="openTawkChat()">
+      Chat en Vivo
+    </button>
+  </div>
+</div>

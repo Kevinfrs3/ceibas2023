@@ -50,4 +50,5 @@ export class MenuComponent implements OnInit {
   toggleSection() {
     this.isSectionVisible = !this.isSectionVisible;
   }
+  
 }
