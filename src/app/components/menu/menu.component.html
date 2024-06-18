@@ -1,279 +1,138 @@
-<header class="main-header">
-  <div _ngcontent-dqm-c25 class="gov-header">
-    <div _ngcontent-dqm-c25 class="container-header-gov region region-header-top">
-      <div _ngcontent-dqm-c25>
-        <a _ngcontent-dqm-c25 href="https://www.gov.co/" target="_blank"><img _ngcontent-dqm-c25
-            src="../../../assets/images/logo-header-gov.svg" width="140px" alt="logo gov" class="logo-header-gov"></a>
-            <div class="translate-button-container">
-              <app-google-translate-button></app-google-translate-button>
-            </div>
-      </div>
+<div _ngcontent-dqm-c25 class="gov-header">
+  <div _ngcontent-dqm-c25 class="container-header-gov region region-header-top">
+    <div _ngcontent-dqm-c25>
+      <a _ngcontent-dqm-c25 href="https://www.gov.co/" target="_blank"
+        ><img
+          _ngcontent-dqm-c25
+          src="../../../assets/images/logo-header-gov.svg"
+          width="130px"
+          alt="logo gov"
+          class="logo-header-gov"
+      /></a>
+      <!-- <div class="translate-button-container">
+        <app-google-translate-button></app-google-translate-button>
+      </div> -->
     </div>
   </div>
-  <header class="main-header">
-    <div class="header-lower">
-      <div class="outer-box">
-        <div class="logo-box">
-          <figure class="logo">
-            <a href="/home"><img src="../../../assets/images/logo-ceibas.png" alt="logo de las ceibas"></a>
-          </figure>
-        </div>
-        <div class="menu-area clearfix">
-          <div class="mobile-nav-toggler" (click)="openSidenav()"><i class="icon-bar"></i> <i class="icon-bar"></i> <i
-              class="icon-bar"></i>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div class="container z-2 position-absolute position-custom p-0">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary size-container p-2">
+      <div class="logo-las-ceibas">
+        <a class="navbar-brand" href="/home">
+          <img
+            class="size-img-logo m-2 m-lg-4"
+            src="https://www.lasceibas.gov.co/assets/images/logo-ceibas.png"
+            alt="logo-las-ceibas"
+          />
+        </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        (click)="toggleSection()"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+      <div [ngClass]="{ collapse: !isSectionVisible, 'navbar-collapse': true }">
+        <div
+          class="d-flex flex-column flex-lg-row w-100 justify-content-between"
+        >
+          <div class="d-flex flex-column flex-lg-row align-items-center">
+            <div class="row m-4">
+              <div
+                class="d-flex flex-column flex-lg-row justify-content-end align-items-lg-center caja-btn"
+              >
+                <a href="#" class="btn btn-link my-2 my-lg-0"
+                  >Transacciones rápidas</a
+                >
+                <a href="#" class="btn btn-link my-2 my-lg-0"
+                  >Trámites y servicios</a
+                >
+              </div>
+              <div class="mt-4">
+                <ul
+                  class="navbar-nav d-flex flex-lg-row justify-content-between align-items-lg-center p-0"
+                >
+                  <li class="nav-item menu-item">
+                    <a
+                      routerLink="/transparenci"
+                      class="nav-link text-dark text-decoration-none p-0 mt-lg-0"
+                      >Transparencia y acceso información pública</a
+                    >
+                    <img
+                      class="menu-item-gif"
+                      alt=""
+                      src="../../../assets/videos_gif/1_transparencia.gif"
+                    />
+                  </li>
+                  <div class="linea-vertical d-none d-lg-flex"></div>
+                  <li class="nav-item menu-item">
+                    <a
+                      routerLink="/atencion-usuario"
+                      class="nav-link text-dark text-decoration-none p-0 mt-2 mt-lg-0"
+                      >Atención y servicio a la ciudadanía</a
+                    >
+                    <img
+                      class="menu-item-gif"
+                      alt
+                      src="../../../assets/videos_gif/2_Atencion.gif"
+                    />
+                  </li>
+                  <div class="linea-vertical d-none d-lg-flex"></div>
+                  <li class="nav-item menu-item">
+                    <a
+                      routerLink="/participa"
+                      class="nav-link text-dark text-decoration-none p-0 mt-2 mt-lg-0"
+                      >Participa</a
+                    >
+                    <img
+                      class="menu-item-gif"
+                      src="../../../assets/videos_gif/3_participa.gif"
+                    />
+                  </li>
+                  <div class="linea-vertical d-none d-lg-flex"></div>
+                  <li class="nav-item menu-item">
+                    <a
+                      routerLink="/ceibas"
+                      class="nav-link text-dark text-decoration-none p-0 mt-2 mt-lg-0"
+                      >Las Ceibas</a
+                    >
+                    <img
+                      class="menu-item-gif"
+                      alt
+                      src="../../../assets/videos_gif/4.-La-ceibas.gif"
+                    />
+                  </li>
+                  <div class="linea-vertical d-none d-lg-flex"></div>
+                  <li class="nav-item menu-item">
+                    <a
+                      routerLink="/contactenos"
+                      class="nav-link text-dark text-decoration-none p-0 mt-2 mt-lg-0"
+                      >Contáctenos</a
+                    >
+                    <img
+                      class="menu-item-gif"
+                      alt
+                      src="../../../assets/videos_gif/8.-contactenos_1.gif"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <div class="linea-horizontal d-none d-lg-flex"></div>
+              </div>
+            </div>
           </div>
-          <nav class="main-menu navbar-expand-md navbar-light">
-            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedConten">
-              <ul class="navigation clearfix">
-
-                <li class="menu-item">
-                  <a routerLink="/transparenci">Transparencia y Acceso <br>a la Información Pública</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/1_transparencia.gif">
-                </li>
-
-                <li class="menu-item">
-                  <a routerLink="/atencion-usuario">Atención y servicios<br>a la ciudadanía<br></a>
-                  <img class="menu-item-gif" alt src="../../../assets/videos_gif/2_Atencion.gif">
-                </li>
-
-
-                <!-- <li class="menu-item">
-                  <a routerLink="/atencion-usuario">Atención y servicios<br>a la ciudadanía<br></a>
-                  <img class="menu-item-gif" alt src="../../../assets/videos_gif/2_Atencion.gif">
-                </li>
-                 -->
-                <li class="menu-item">
-                  <a href="/participa">Participa</a>
-                  <img class="menu-item-gif" src="../../../assets/videos_gif/3_participa.gif">
-                </li>
-                <li class="menu-item">
-                  <a routerLink="/ceibas">Las Ceibas<br></a>
-                  <img class="menu-item-gif" alt src="../../../assets/videos_gif/4.-La-ceibas.gif">
-                </li>
-                <li class="menu-item">
-                  <a href="/mipg" rel="noopener noferrer">MIPG<br></a>
-                  <img class="menu-item-gif" alt src="../../../assets/videos_gif/4.-La-ceibas.gif">
-                </li>
-                <li class="menu-item">
-                  <a routerLink="/contratacion" rel="noopener noferrer">Contratación<br></a>
-                  <img class="menu-item-gif" alt src="../../../assets/videos_gif/6.-contratacion.gif">
-                </li>
-                <li class="menu-item">
-                  <a href="/sala-prensa" rel="noopener noferrer">Sala de Prensa</a>
-                  <img class="menu-item-gif" alt src="../../../assets/videos_gif/7.-prensa.gif">
-                </li>
-                <li class="menu-item">
-                  <a routerLink="/contactenos" rel="noopener noferrer">Contáctenos<br></a>
-                  <img class="menu-item-gif" alt src="../../../assets/videos_gif/8.-contactenos_1.gif">
-                </li>
-              </ul>
-            </div>
-          </nav>
         </div>
-      </div>
-    </div>
-    
-   
-    <!--<div id="accesibilidad-menu" class="accesibilidad-menu">
-      <ul class="accesibilidad-items">
-        <li>
-          <a id="high_contrast" hclass="icon-contrast" title="Cambiar niveles de contraste"> <img
-              src="../../../assets/images/channels-616_icon_contrast.svg" alt="Botón contraste" class="img-fluid"> <span
-              style="color:#ffffff"> Contraste </span> </a>
-        </li>
-        <li>
-          <a id="a_less " href="javascript:void(0) " class="icon-a-less" title="Reducir el tamaño del texto"> <img
-              src="../../../assets/images/channels-616_icon_less_size.svg" alt="Botón Reducir el tamaño del texto"
-              class="img-fluid">
-            <span style="color:#ffffff"> Reducir letra </span> </a>
-        </li>
-        <li>
-          <a id="a_more" href="javascript:void(0)" class="icon-a-more" title="Aumentar el tamaño del texto"> <img
-              src="../../../assets/images/channels-616_icon_more_size(1).svg " alt="Botón Aumentar tamaño del texto"
-              class="img-fluid"> <span style="color:#ffffff"> Aumentar letra </span> </a>
-        </li>
-        <li>
-          <a id="c_relevo" href="https://centroderelevo.gov.co/632/w3-channel.html" target="_blank" class="icon-a-less"
-            title="Ir a Centro de Relevo"> <img src="../../../assets/images/channels-616_icon_centro_relevo.svg"
-              alt="Botón Reducir el tamaño del texto" class="img-fluid"> <span style="color:#ffffff"> Centro de relevo
-            </span>
-          </a>
-        </li>
-      </ul>
-    </div>-->
-
-
-
-    <button class="floating-button" (click)="toggleInfo()">
-      <mat-icon></mat-icon>
-    </button>
-
-    <div class="info" *ngIf="showInfo">
-      <button class="close"></button>
-      <div>
-        <div class="logo">
-          <img src="../../../assets/images/logo-chat-ceibas.png" alt="Logo">
-        </div>
-        <h2>Bienvenidos a las Ceibas E.S.P</h2>
-        <h3>Mejoramos nuestros medios de comunicación<br>dando así un mejor servicio</h3>
-      </div>
-      <div class="step1_wrapper three_messenger_textus_livechat">
-        <a href="./pqrs" 
-          rel="noopener noferrer">
-          <button class="chat_now_btn nav-link">PQRSDF</button></a>
-
-        <a href="https://wa.me/573247669054"
-          target="_blank" rel="noopener noferrer" target="_blank " rel="noopener noferrer">
-          <button class="chat_now_btn nav-link">WhatsApp</button></a>
-
-        <!-- <a href="https://dattachat.com/chat/loadchat/?wid=5e9e348f8b668541657774&sid=422R51q7vO414ds761Ss&host=portal.lasceibas.gov.co"
-          target="_blank " rel="nooperner noferrer">
-          <button disabled class="chat_now_btn nav-link">Chat en Vivo</button></a> -->
-          
-          <button class="chat_now_btn nav-link" (click)="openTawkChat()">Chat en Vivo</button>
-        
-      </div>
-    </div>
-
-    
-
-
-
-
-    <!--
-    <div class="sticky-header">
-      <div class="outer-box">
-        <div class="logo-box">
-          <figure class="logo">
-            <a routerLink="/home"><img src="../../../assets/images/logo-ceibas.png" width="180px" height="110px"
-                alt="Logo de las ceibas" role="noperner"></a>
-          </figure>
-        </div>
-        <div class="menu-area clearfix">
-          <nav class="main-menu clearfix">
-            <div class="collapse navbar-collapse show clearfix" id="navbarSupportedConten">
-              <ul class="navigation clearfix">
-                <li class="menu-item">
-                  <a href="transparenci">Transparencia y Acceso<br>a la Información Pública</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/1_transparencia.gif">
-                </li>
-
-               <li class="menu-item">
-                    <a href="atencion-usuario">Atención y servicios<br>a la ciudadanía</a>
-                    <img class="menu-item-gif_2" alt="" src="../../../assets/videos_gif/2_Atencion.gif">
-                    <div class="submenu">
-                      <a class="submenu-item" href="/atencion-usuario#Tramites">Trámites</a>
-                      <a class="submenu-item" href="/atencion-usuario#ServiciosEnLinea">Servicios en Línea</a>
-                      <a class="submenu-item" href="/atencion-usuario#TramitesSuit">Trámites Suit</a>
-                    </div>
-                </li>
-
-                
-                <li class="menu-item">
-                  <a href="participa">Participa</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/3_participa.gif">
-                </li>
-                <li class="menu-item">
-                  <a href="ceibas">Las Ceibas</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/4.-La-ceibas.gif">
-                </li>
-                <li class="menu-item">
-                  <a href="mipg">MIPG</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/5.-MIPG.gif">
-                </li>
-                <li class="menu-item">
-                  <a href="contratacion">Contratación</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/6.-contratacion.gif">
-                </li>
-                <li class="menu-item">
-                  <a href="https://portal.lasceibas.gov.co/sala">Sala de Prensa</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/7.-prensa.gif">
-                </li>
-                <li class="menu-item">
-                  <a href="contactenos">Contáctenos</a>
-                  <img class="menu-item-gif" alt="" src="../../../assets/videos_gif/8.-contactenos_1.gif">
-                </li>
-              </ul>
-              
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  -->
-  </header>
-  <div class="mobile-menu">
-    <div class="menu-backdrop"></div>
-    <div class="close-btn"><i class="fas fa-times"></i></div>
-    <nav class="menu-box">
-      <div class="nav-logo">
-        <a href="/home"><img src="../../../assets/images/logo-ceibas-verde.png" width="250px" height="120px"
-            alt="logo de las ceibas para móviles" title></a>
-      </div>
-      <div class="menu-outer">
-        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-          <ul class="navigation clearfix">
-            <li class="dropdown"><a href="transparenci">Transparencia y Acceso<br>a la Información
-                Pública</a>
-              <ul>
-                <li>
-                  <img class="cja-mudo" alt="" src="../../../assets/videos_gif/1_transparencia.gif">
-                </li>
-              </ul>
-              <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-            </li>
-
-
-
-            <li class="dropdown">
-              <a href="atencion-usuario">Atención y servicios<br>a la ciudadanía</a>
-              <ul style="display: block;">
-                <li><a href="/atencion-usuario#Tramites">Trámites</a></li>
-                <li><a href="/atencion-usuario#ServiciosEnLinea">Servicios en Línea</a></li>
-                <li><a href="/atencion-usuario#TramitesSuit">Trámites Suit</a></li>
-              </ul>
-              <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-            </li>
-
-
-
-            <li class="dropdown"><a href="participa">Participa</a>
-              <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-            </li>
-            <li class="dropdown"><a href="ceibas">Las Ceibas</a>
-              <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-            </li>
-            <li class="dropdown"><a href="mipg">MIPG</a>
-              <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-            </li>
-            <li class="dropdown"><a href="contratacion">Contratación</a>
-              <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-            </li>
-            <li class="dropdown"><a href="/sala-prensa">Sala de Prensa</a>
-              <div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>
-            </li>
-            <li><a href="contactenos">Contáctenos</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="contact-info">
-        <h4>Información de Contacto</h4>
-        <ul>
-          <li>Calle 6 # 6 - 02 Centro</li>
-          <li><a href="tel:3330334116">333 033 4116</a></li>
-          <li><a href="mailto:info@lasceibas.gov.co">info@lasceibas.gov.co</a></li>
-        </ul>
-      </div>
-      <div class="social-links">
-        <ul class="clearfix">
-          <li><a href="https://twitter.com/lasceibasesp" target="_blank" rel="noopener noferrer"><span
-                class="fab fa-twitter"></span></a></li>
-          <li><a href="https://www.facebook.com/lasceibasesp" target="_blank" rel="noopener noferrer"><span
-                class="fab fa-facebook-square"></span></a></li>
-          <li><a href="https://www.instagram.com/lasceibasesp/" target="_blank" rel="noopener noferrer"><span
-                class="fab fa-instagram"></span></a></li>
-          <li><a href><span class="fab fa-youtube"></span></a></li>
-        </ul>
       </div>
     </nav>
   </div>
+</div>

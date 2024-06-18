@@ -1,15 +1,5 @@
-ol, ul {
-  padding-left: 0rem;
-}
-
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-
-
 .gov-header[_ngcontent-dqm-c25] {
   background-color: #36c;
-  padding: 10px
 }
 
 .translate-button-container {
@@ -21,101 +11,33 @@ ol, ul {
   max-width: 90%;
 }
 
-
-
-
-/* Estilos responsivos */
-@media screen and (max-width: 768px) {
-  .translate-button-container {
-    position: static;
-    float: none;
-    margin-top: 10px;
-    margin-right: 0;
-  }
+.size-container {
+  border-radius: 0px 0px 35px 35px;
 }
 
 
-
-.accesibilidad-menu {
-  background-color:#fbd400;
-  display:block;
-  position:fixed;
-  top:70%;
-  transform:translateY(-50%);
-  left:auto;
-  right:0;
-  z-index:200;
-  border-radius:8px;
-  box-shadow:0 0 10px 3px #0000002b;
-  -webkit-transform:translateY(-50%);
-  -moz-transform:translateY(-50%);
-  -ms-transform:translateY(-50%);
-  -o-transform:translateY(-50%)
- }
- .accesibilidad-items {
-  list-style:none;
-  display:flex;
-  flex-direction:column;
-  padding:5px;
-  width:36px;
-  margin:0
- }
- .accesibilidad-items a {
-  display:flex;
-  align-items:center;
-  color:#fff;
-  border-radius:8px;
-  transition:all .5s;
-  width:180px;
-  padding:2px 0;
-  text-decoration:none
- }
- .accesibilidad-items a:hover {
-  background-color:#95bd21;
-  -webkit-transform:translateX(-140px);
-  transform:translateX(-140px);
-  padding:2px 10px
- }
- .accesibilidad-items img {
-  display:flex;
-  width:26px;
-  height:26px;
-  padding:4px;
-  margin:5px 0;
-  background-color:#fff;
-  align-items:center;
-  justify-content:center;
-  border-radius:6px
- }
- .accesibilidad-items span {
-  font-size:13px;
-  margin-left:10px
- }
- @media only screen and (max-width:575.98px) {
-  .accesibilidad-items {
-   width:30px
-  }
-  .accesibilidad-items img {
-   width:20px;
-   height:20px;
-   margin:3px 0
-  }
- }
-
- *, *::before, *::after {
-  box-sizing: border-box;
-}
-.main-menu .navigation > li.dropdown > a:before {
-  position: absolute;
-  content: "\f107";
-  font-family: "Font Awesome 5 Pro";
-  top: 44px;
-  right: 0px;
-  transition: all 500ms ease;
+.logo-las-ceibas {
+  width: 18vw;
 }
 
-a{
+.size-img-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.caja-btn a {
+  margin: 0px 0px 0px 10px;
+  min-width: 210px;
+  height: 35px;
+  color: white;
+  background-color: #0078B7;
+  border: none;
+  border-radius: 50px;
   text-decoration: none;
+}
+
+.caja-btn a:hover {
+  background-color: #063568;
 }
 
 .menu-item-gif {
@@ -125,133 +47,35 @@ a{
   z-index: 100;
 }
 
+
 .menu-item:hover .menu-item-gif {
   display: block;
-}
-
-/*Estilos para desplegar submenus*/
-
-/* Estilo para el menú principal */
-.menu-item {
-  position: relative;
-  display: inline-block;
-}
-
-/* Estilo para el submenú */
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50;
-  background-color: #f9f9f9;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 16px;
-  z-index: 2;
-  width: 19.9%;
-}
-
-.submenu a {
-  color: black;
-  text-decoration: none;
-  display: block;
-}
-
-.submenu a:hover {
-  color: #3c3c3c;
-}
-
-/* Mostrar el submenú cuando se pasa el cursor por encima del elemento del menú principal */
-.menu-item:hover .submenu {
-  display: block;
-}
-
-/*Estilos para la visualizacion de los submenus*/
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 45;
-  background-color: white;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  padding: 12px 14px;
-  z-index: 101;
-  width: 19.7%;
-  border: 1px solid #e0e0e0;
-}
-
-.submenu-item {
-  display: block;
-  padding: 4px 8px;
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #000000; /* Cambiar el color del texto */
-  font-weight: 600;
-  transition: background-color 0.3s, color 0.3s; /* Añadir una transición suave para el cambio de color de fondo y texto */
-}
-
-.submenu-item:hover {
-  background-color: #97bf1d; /* Cambiar el color de fondo a naranja al pasar el cursor */
+  background-color: #063568;
+  color: #063568;  
 }
 
 
-
-/*estilo el gif para atencion y servicios*/
-.menu-item-gif_1 {
-  display: none;
-  max-width: 200px;
-  position: absolute;
-  z-index: 1; /* Asegúrate de que el z-index del GIF sea menor que el z-index del submenú */
-  top: 170px; /* Ajusta la posición vertical del GIF */
-  left: 50;    /* Ajusta la posición horizontal del GIF */
-}
-.menu-item-gif_2 {
-  display: none;
-  max-width: 200px;
-  position: absolute;
-  z-index: 1; /* Asegúrate de que el z-index del GIF sea menor que el z-index del submenú */
-  top: 220px; /* Ajusta la posición vertical del GIF */
-  left: 50;    /* Ajusta la posición horizontal del GIF */
-}
-
-.menu-item:hover .menu-item-gif_1 {
-  display: block;
-}
-.menu-item:hover .menu-item-gif_2 {
-  display: block;
+/* ! CORREGIR */
+.menu-item li a:hover {
+  background-color: #063568;
+  color: #ffff;  
 }
 
 
-/*ESTILOS MODAL*/
-.container {
-  position: relative;
+.linea-horizontal {
+  border: 1px solid #0078B7;
+  height: 0%;
+  margin-top: 15px;
 }
 
-.floating-button {
-  position: fixed;
-  bottom: 12px;
-  right: 25px;
-
-  z-index: 9999;
-  width: 70px; /* Ancho del botón */
-  height: 70px; /* Alto del botón */
-  background-color: #95bd21; /* Color de fondo del botón */
-  background-image: url(../../../assets/images/icons/atencion-al-cliente.png); /* Ruta de la imagen */
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%; /* Hace que el botón sea redondo */
+.linea-vertical {
+  border: 1px solid #0078B7;
+  height: 25px;
 }
 
-.info {
-  position: fixed;
-  bottom: 80px;
-  right: 80px;
-  z-index: 9999;
-  background-color: rgba(255,255,255,0.9);
-  padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+@media (max-width: 768px) {
+  /*  El carusel cuando este en dispositivo celular pase a relative */
+  .position-custom {
+    position: relative !important;
+  }
 }
-
-
