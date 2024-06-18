@@ -1,7 +1,13 @@
 a {
   text-decoration: none;
 }
-.card {
+
+.title-sala-prensa {
+  font-size: 30px;
+  color: #0078B7;
+}
+
+.card-facebook {
   max-width: 500px;
   margin: 25px;
   padding: 10px;
@@ -11,43 +17,28 @@ a {
   box-shadow: 2px 2px 8px #0078b7;
   transition: transform 0.3s ease;
 }
-.card:hover {
-  transform: scale(1.1);
+
+.card-facebook:hover {
+  transform: scale(1.05);
 }
+
 .news-section {
   position: relative;
   padding: 0px 0px 0px 0px;
 }
-.news-block-one {
-  display: flex;
-}
 
-.card1 {
-  max-width: max-content;
+
+.card-info-prensa {
   margin: 25px;
   padding: 10px;
-  width: 791px;
+  max-width: 800px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   box-shadow: 2px 2px 8px #0078b7;
   transition: transform 0.3s ease;
 }
 
-.card1:hover {
-  transform: scale(1.1);
+.card-info-prensa:hover {
+  transform: scale(1.05);
 }
 
-@media (max-width: 575.98px) {
-  .card {
-    width: 280px;
-  }
-  .card1 {
-    width: 280px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .fb-page {
-    width: 250px;
-  }
-}

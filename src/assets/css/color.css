@@ -3,7 +3,7 @@
     border-radius: 30%;
 }
 .handle-preloader{
-    background-color:#00556a
+    background-color:#55c1dc
 }
 .preloader-close{
     color:#00d1f9
@@ -12,7 +12,7 @@
     background-color:#96bd21
 }
 .theme-btn:before{
-    background-color:#00556a
+    background-color:#8f7d41
 }
 .main-header .nav-right .cart-box a span{
     background-color:#00d1f9
@@ -51,7 +51,7 @@
     background-color:#00d1f9
 }
 .theme-btn.btn-two:before{
-    background-color:#0078B7
+    background-color:#00d1f9
 }
 .theme-btn.btn-two:hover{
     border-color:#00d1f9
@@ -96,7 +96,7 @@
     color:#49b0b4
 }
 .main-footer .footer-top .support-box a{
-    background-color:#49b0b4
+    background-color:#b49049
 }
 .main-footer .contact-widget .info-list li a:hover{
     color:#00d1f9

@@ -37,7 +37,12 @@ body {
   padding: 0px;
 }
 
-
+.auto-container{
+  position:static;
+  max-width:1200px;
+  padding:0px 15px;
+  margin:0 auto;
+}
 
 .small-container{
   max-width:680px;
@@ -1553,7 +1558,15 @@ div#mCSB_1_container{
   position: relative;
 }
 
-
+.feature-section .inner-container{
+  position: relative;
+  display: block;
+  background-color: #fff;
+  padding: 40px 10px 50px 10px;
+  box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.1);
+  margin-top: -100px;
+  z-index: 2;
+}
 
 .feature-section .title-text{
   position: relative;
@@ -1656,12 +1669,18 @@ div#mCSB_1_container{
   padding: 15px 50px;
 }
 
-
+.bg-color-1{
+  background-color: #00556A;
+}
 
 
 /** service-section **/
 
+.service-section{
+  position: relative;
 
+  padding: 40px 0 0 0;
+}
 
 .service-section .shape{
   position: absolute;
@@ -2391,7 +2410,10 @@ div#mCSB_1_container{
 
 /** news-section **/
 
-
+.news-section{
+  position: relative;
+  padding: 0px 0px 100px 0px;
+}
 
 .news-block-one .inner-box{
   position: relative;
@@ -2525,7 +2547,10 @@ div#mCSB_1_container{
 
 /** main-footer **/
 
-
+.main-footer{
+  position: relative;
+  background-color: #00556A;
+}
 
 .main-footer .pattern-layer .pattern-3{
   position: absolute;
