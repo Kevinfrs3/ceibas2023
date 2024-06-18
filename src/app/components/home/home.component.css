@@ -1,142 +1,122 @@
-.carousel-caption {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -40px;
-  padding: 0 20px;
-  text-align: left;
-  margin-top: 2rem; /* Agregar margen superior */
-  
-}
-.cajainteres {
-  position: static;
-  max-width: max-content;
-  padding: 0px 15px;
-  margin: 0 auto;
+.custom-shadow {
+  box-shadow: 0px 8px 15px 0px #00B4D7;
+  border: 1 solid rgb(0, 0, 0);
 }
 
-.carousel-item img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.size-servicios {
+  width: 100%;
 }
-.service-section{
+
+/* ! CAROUSEL */
+
+.banner-container {
   position: relative;
-  padding: 0px 0 0 0;
-}
-.bg-color-1{
-  background-color: #00556A;
-}
-
-.carousel-caption h1,
-.carousel-caption h3 {
-  color: #fff;
-  margin-bottom: 5px;
-}
-
-.carousel-caption a.btn {
-  font-size: 1rem;
-  padding: 10px 20px;
-  text-decoration: none;
-}
-
-.carousel-caption img {
-  max-width: 100%;
-  height: auto;
-}
-
-.carousel-caption img.pse-logo {
-  max-width: 250px;
-  height: 100px;
-}
-
-.carousel-heading {
-  font-size: 42px;
-}
-
-.carousel-heading-2 {
-  font-size: 42px;
-}
-
-.carousel-caption h3 {
-  font-size: 1.4rem;
+  width: 100%;
+  height: 40vw;
+  overflow: hidden;
+  background-color: rgb(159, 210, 255);
 }
 
 
-/* Estilos para escritorio */
-@media (min-width: 992px) {
-  .carousel-caption {
-    right: 10%;
-    left: 10%;
-    padding-bottom: 100px;
-  }
+.circulo-banner {
+  position: absolute;
+  bottom: 50px;
+  left: -5vw;
+  width: 23vw;
+  height: 23vw;
+  border-radius: 50%;
+  background-color: rgb(216, 223, 255);
+  border: 4px solid white;
+  overflow: hidden;
+  display: flex;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px -1px 186px 61px #406aa0;
+  -webkit-box-shadow: -2px -1px 186px 61px #406aa0;
+  -moz-box-shadow: -2px -1px 186px 61px #406aa0;
+  /* box-shadow: -2px -1px 400px -16px #ffff;
+  -webkit-box-shadow: -2px -1px 400px -16px #ffff;
+  -moz-box-shadow: -2px -1px 400px -16px #ffff; */
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 991px) {
-  .carousel-heading {
-    font-size: 20px;
-    top: 0%;
-    left: 0%;
-    bottom: auto;
-    transform: translate(-10%, 170%);
-    text-align: center;
-  }
-  .carousel-heading-2 {
-    font-size: 13px;
-    top: 0%;
-    left: -10%;
-    bottom: auto;
-    transform: translate(-10%, 125%);
-    text-align: center;
-  }
-  .carousel-heading-3 {
-    font-size: 14px;
-    top: 0%;
-    left: -10%;
-    bottom: auto;
-    transform: translate(-10%, 125%);
-    text-align: center;
-  }
-  .carousel-caption a.btn {
-    font-size: 0.5rem;
-    padding: 2px 7px;
-    transform: translate(-10%, -150%);
-  }
-  .carousel-caption-2 a.btn {
-    font-size: 0.5rem;
-    padding: 2px 7px;
-    transform: translate(-10%, 0%);
-  }
-  .carousel-caption img.pse-logo {
-    max-width: 10px;
-    height: 0px;
-  }
-  .carousel-caption-2 img.pse-logo {
-    max-width: 1px;
-    height: 0px;
-    transform: translate(0%, -40%);
-  }
-  .carousel-caption-3 img.pse-logo {
-    max-width: 1px;
-    height: 0px;
-    transform: translate(0%, -35%);
-  }
-  .carousel-caption img.img-fluid {
-    max-width: 55%;
-    height: auto;
-  }
-  .text-element {
-    display: none;
-  }
-  .carousel-caption {
-    top: -10%;
-    left: 30%;
-    bottom: auto;
-    transform: translate(-30%, -30%);
-    text-align: center;
-  }
+.circulo-banner img {
+  width: 100%;
+  height: 100%;
 }
+
+.svg-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.content-above-svg {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+.circulo-servicio {
+  width: 160px;
+  height: 160px;
+  background-color: #00B4D7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #ffff;
+  margin: auto;
+}
+
+
+.container-banner-pago {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.svg-top,
+.svg-bottom {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  left: 0;
+}
+
+.svg-top {
+  top: 0;
+}
+
+.svg-bottom {
+  bottom: 0;
+  transform: rotateX(180deg);
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 300px);
+  overflow: hidden;
+  z-index: 1;
+  clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0% 100%);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 /**/
 .mockup-container {
@@ -148,11 +128,13 @@
   padding: 10px;
   border: 1px solid #ccc;
   z-index: 9999;
-  max-width: 100%; /* Asegura que el contenedor no exceda el ancho de la pantalla en dispositivos móviles */
+  max-width: 100%;
+  /* Asegura que el contenedor no exceda el ancho de la pantalla en dispositivos móviles */
 }
 
 .mockup-image {
-  max-width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+  max-width: 100%;
+  /* Hace que la imagen se ajuste al ancho del contenedor */
   height: auto;
   display: block;
   margin-bottom: 10px;
@@ -169,29 +151,26 @@
 /* Media query para dispositivos móviles con un ancho máximo de 600px */
 @media (max-width: 600px) {
   .mockup-container {
-    padding: 20px; /* Aumenta el padding en dispositivos móviles para un mejor espacio */
+    padding: 20px;
+    /* Aumenta el padding en dispositivos móviles para un mejor espacio */
   }
-  
+
   .mockup-image {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor en dispositivos móviles */
+    width: 100%;
+    /* Hace que la imagen ocupe todo el ancho del contenedor en dispositivos móviles */
   }
-  
+
   .close-button {
-    padding: 10px 16px; /* Reduce el tamaño del padding del botón en dispositivos móviles */
+    padding: 10px 16px;
+    /* Reduce el tamaño del padding del botón en dispositivos móviles */
   }
 }
 
-.link-correo{
+.link-correo {
   text-decoration: none;
   color: #fff;
 }
 
 a {
   text-decoration: none;
-}
-.calrtas-imagen{
-  background: #0078B7;
-  width: 100%;
-  height: 400px;
-  margin: 40px 0px 40px 0px;
 }
