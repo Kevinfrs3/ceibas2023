@@ -116,6 +116,10 @@
   object-fit: cover;
 }
 
+.bg-banner-imprimir-factura {
+  background-color: #406aa0;
+}
+
 
 
 /**/
@@ -147,6 +151,8 @@
   color: #fff;
   cursor: pointer;
 }
+
+
 
 /* Media query para dispositivos móviles con un ancho máximo de 600px */
 @media (max-width: 600px) {
