@@ -41,4 +41,12 @@ a {
 .card-info-prensa:hover {
   transform: scale(1.05);
 }
+/* botones de la sala de prensa */
+
+.theme-btn.btn-two:before{
+  background-color:#0078b7
+}
+.theme-btn.btn-two:hover{
+  border-color:#087a9c
+}
 
