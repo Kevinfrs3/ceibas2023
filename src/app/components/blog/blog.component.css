@@ -26,9 +26,20 @@ a {
   position: relative;
   padding: 0px 0px 0px 0px;
 }
+<<<<<<< HEAD
 
 
 .card-info-prensa {
+=======
+.news-block-one {
+  display: flex;
+}
+.fb-page{
+  height: 600px;
+}
+.card1 {
+  max-width: max-content;
+>>>>>>> 60d2411efe996f07d1ef879d207f8efe303b1abb
   margin: 25px;
   padding: 10px;
   max-width: 800px;
