@@ -91,31 +91,6 @@
  * No permite hacer click, no se ejcuta la accion de cambiar el banner del carousel  
 */
 
-.carousel-indicatorsSSS {
-  position: absolute;
-  bottom: 200px;  
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2; /* Asegura que esté por encima del SVG */
-}
-
-
-.carousel-indicatorsSSS button {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: gray;
-  border: none;
-  margin: 0 10px;
-  opacity: 0.5;
-}
-
-.carousel-indicatorsSSS button.active {
-  background-color: lightgray;
-  /* Color de fondo al pasar el ratón o al enfocar */
-  opacity: 1;
-}
-
 /************************************ */
 .carousel-indicators button {
   width: 20px;

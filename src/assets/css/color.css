@@ -4,7 +4,7 @@
 }
 
 .scroll-top:hover {
-    background-color: #00d5ff;
+    background-color: #2adcff;
 }
 
 .handle-preloader {
@@ -21,7 +21,8 @@
 }
 
 .theme-btn:before {
-    background-color: #8f7d41
+    /* dddd */
+    background-color: #2adcff;
 }
 
 .main-header .nav-right .cart-box a span {

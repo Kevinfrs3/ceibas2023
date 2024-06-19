@@ -332,9 +332,7 @@ img {
   transition: all 500ms ease;
 }
 
-/* .theme-btn.btn-one {
-  color: #ffff !important;
-} */
+
 
 .theme-btn:before {
 
@@ -460,8 +458,6 @@ img {
 .sec-title.light h2 {
   color: #ffffff;
 }
-
-
 
 
 .main-header {
