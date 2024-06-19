@@ -1,6 +1,5 @@
 <app-menu></app-menu>
 
-
 <!--
   *PARA CUANDO NECESITE PONER UN MOCKUP EN EL INICIO DEL PORTAL*
 <div *ngIf="showMockup" class="mockup-container">
@@ -16,7 +15,8 @@
         type="button"
         data-bs-target="#myCarousel"
         data-bs-slide-to="0"
-        class=""
+        class="active"
+        aria-current="true"
         aria-label="Slide 1"
       ></button>
       <button
@@ -24,15 +24,12 @@
         data-bs-target="#myCarousel"
         data-bs-slide-to="1"
         aria-label="Slide 2"
-        class=""
       ></button>
       <button
         type="button"
         data-bs-target="#myCarousel"
         data-bs-slide-to="2"
         aria-label="Slide 3"
-        class="active"
-        aria-current="true"
       ></button>
     </div>
     <div class="carousel-inner">
@@ -200,8 +197,32 @@
     />
   </div>
   <div class="content-above-svg">
-    <p class="text-white">Contenido sobre el SVG</p>
-    <button class="btn btn-primary">Click</button>
+    <div class="d-flex justify-content-center position-relative">
+      <p class="text-white">Contenido sobre el SVG</p>
+      <button class="btn btn-primary">Click</button>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+    </div>
   </div>
   <svg class="svg-container" viewBox="0 0 500 150" preserveAspectRatio="none">
     <path
@@ -362,8 +383,8 @@
   </div>
 </section>
 
-<app-blog></app-blog><br>
+<app-blog></app-blog><br />
 
-<app-menuinteres></app-menuinteres><br><br>
+<app-menuinteres></app-menuinteres><br /><br />
 
 <app-footer></app-footer>

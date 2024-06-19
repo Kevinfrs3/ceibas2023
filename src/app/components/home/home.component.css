@@ -76,6 +76,29 @@
   margin: auto;
 }
 
+/* CORREGIR */
+/* 
+ * Lo que sucede es que SVG esta por encima de los botones,
+ * No permite hacer click, no se ejcuta la accion de cambiar el banner del carousel  
+*/
+
+
+.carousel-indicators button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  border: none;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.carousel-indicators button {
+  background-color: lightgray;
+  /* Color de fondo al pasar el ratón o al enfocar */
+  opacity: 1;
+}
+
 
 .container-banner-pago {
   position: relative;
