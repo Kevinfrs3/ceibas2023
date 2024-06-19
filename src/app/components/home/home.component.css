@@ -75,23 +75,21 @@
   overflow: hidden;
   border: 1px solid #ffff;
   margin: auto;
-  transition-duration: 0.4s; /* Duración de la transición */
-  cursor: pointer; /* Cursor de puntero */
+  transition-duration: 0.4s; 
+  cursor: pointer; 
 }
 .circulo-servicio:hover {
   transform: scale(1.1);
-  background-color: rgba(39, 174, 236, 0.356); /* Color de fondo */
-  color: black; /* Color del texto */
-  border: 2px solid #5ba3f552; /* Borde */
+  background-color: rgba(39, 174, 236, 0.356); 
+  color: black; 
+  border: 2px solid #5ba3f552; 
 }
-
 /* CORREGIR */
 /* 
  * Lo que sucede es que SVG esta por encima de los botones,
  * No permite hacer click, no se ejcuta la accion de cambiar el banner del carousel  
 */
 
-/************************************ */
 .carousel-indicators button {
   width: 20px;
   height: 20px;
@@ -102,47 +100,7 @@
 .carousel-indicators .active {
   background-color: #fff;
 }
-/* ******************** */
 
-
-.container-banner-pago {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.svg-top,
-.svg-bottom {
-  position: absolute;
-  width: 100%;
-  height: 150px;
-  left: 0;
-}
-
-.svg-top {
-  top: 0;
-}
-
-.svg-bottom {
-  bottom: 0;
-  transform: rotateX(180deg);
-}
-
-.image-container {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: calc(100% - 300px);
-  overflow: hidden;
-  z-index: 1;
-  clip-path: polygon(0 30%, 100% 0%, 100% 70%, 0% 100%);
-}
-
-.image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .bg-banner-imprimir-factura {
   background-color: #406aa0;
