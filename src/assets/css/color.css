@@ -16,7 +16,8 @@
 }
 
 .theme-btn.btn-one {
-    background-color: #96bd21
+    color: #ffff;
+    background-color: #00b4d7;
 }
 
 .theme-btn:before {
