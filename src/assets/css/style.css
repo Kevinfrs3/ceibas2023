@@ -388,13 +388,10 @@ img {
   height: 55px;
   line-height: 64px;
   position: fixed;
-  /* bottom: 105%; */
   bottom: 100px;
-  /* top: 100%; */
   right: 30px;
   font-size: 40px;
   z-index: 99;
-  /* z-index: 99; */
   color: #ffff;
   text-align: center;
   cursor: pointer;
