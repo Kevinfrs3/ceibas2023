@@ -74,6 +74,14 @@
   overflow: hidden;
   border: 1px solid #ffff;
   margin: auto;
+  transition-duration: 0.4s; /* Duración de la transición */
+  cursor: pointer; /* Cursor de puntero */
+}
+.circulo-servicio:hover {
+  transform: scale(1.1);
+  background-color: rgba(39, 174, 236, 0.356); /* Color de fondo */
+  color: black; /* Color del texto */
+  border: 2px solid #5ba3f552; /* Borde */
 }
 
 /* CORREGIR */
