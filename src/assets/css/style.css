@@ -296,7 +296,7 @@ img {
 }
 
 .theme-btn.btn-one{
-  color: #fff !important;
+  color: #ffff !important;
 }
 
 .theme-btn:before{
@@ -327,9 +327,6 @@ img {
 .theme-btn.btn-two:hover{
   color: #fff !important;
 }
-
-
-
 
 
 .pagination{
@@ -391,11 +388,14 @@ img {
   height: 55px;
   line-height: 64px;
   position: fixed;
-  bottom: 105%;
+  /* bottom: 105%; */
+  bottom: 100px;
+  /* top: 100%; */
   right: 30px;
   font-size: 40px;
   z-index: 99;
-  color: #ffffff;
+  /* z-index: 99; */
+  color: #ffff;
   text-align: center;
   cursor: pointer;
   transition: 1s ease;
