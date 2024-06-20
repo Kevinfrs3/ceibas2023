@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
+interface BreadcrumbItem {
+  label: string;
+  url: string;
+}
 @Component({
   selector: 'app-transparenci',
   templateUrl: './transparenci.component.html',
@@ -8,11 +12,19 @@ import { Title } from '@angular/platform-browser';
 })
 export class TransparenciComponent implements OnInit {
 
-  constructor(private titulo: Title) { 
-    titulo.setTitle('Transparencia | Las Ceibas E.S.P');
-  }
+  
+  breadcrumbItems: BreadcrumbItem[] = [
+    { label: 'Inicio', url: '/' },
+    { label: 'Categoría', url: '/categoria' },
+    { label: 'Subcategoría', url: '/subcategoria' },
+    { label: 'Producto', url: '/producto' }
+  ];
 
   ngOnInit(): void {
   }
+  constructor(private titulo: Title) { 
+    titulo.setTitle('Transparencia | Las Ceibas E.S.P');
+  }
+  
 
 }
