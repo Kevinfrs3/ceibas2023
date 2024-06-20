@@ -84,11 +84,7 @@
   color: black; 
   border: 2px solid #5ba3f552; 
 }
-/* CORREGIR */
-/* 
- * Lo que sucede es que SVG esta por encima de los botones,
- * No permite hacer click, no se ejcuta la accion de cambiar el banner del carousel  
-*/
+
 
 .carousel-indicators button {
   width: 20px;
