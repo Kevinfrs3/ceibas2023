@@ -1,605 +1,491 @@
 <div class="container mt-4">
   <div id="accordionExample">
     <div class="accordion-item">
-      <h2 class="accordion-header" id="headingOne">
-        <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed = !isCollapsed"
-          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseOne">
-          <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/informacion.png" alt
-              width="50px" height="50px" hspace="10px">1. Información de la entidad</h4>
-        </button>
-      </h2>
-      <div id="collapseOne" [collapse]="isCollapsed" class="accordion-collapse" aria-labelledby="headingOne"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body custom-accordion-body">
-          <li><a href="../../../../assets/Archivos/mision-vision/mision-vision.pdf" target="_blank">1.1 Misión y
-              Visión</a></li>
-          <li><a href="../../../../assets/Archivos/lasceibas/manual_de_funciones_empleados_publicos.pdf"
-              target="_blank">1.1 Funciones y Deberes</a></li>
-          <li><a routerLink="/estructura-organica">1.2 Estructura orgánica - Organigrama</a></li>
-          <li><a href="../../../../assets/Archivos/documentos-ceibas-pdf/GI-DA-09 Mapa de procesos.pdf"
-              target="_blank">1.3 Mapas y cartas descriptivas de los
-              procesos</a></li>
-          <li><a routerLink="/directorio-institucional">1.4 Directorio Institucional</a></li>
-
-          <li><b>1.5 Directorio de servidores públicos.</b>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section1" class="accordion-toggle">
+          <label for="section1" class="accordion-header">
+            <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/informacion.png"
+                alt width="40px" height="40px" hspace="5px">1. Información de la entidad</h4>
+          </label>
+          <div class="accordion-content">
             <ul>
-              <!-- ../../../../assets/Archivos/documentos-tranparencia/1.5/directorio_servidores_publicos_las_ceibas.html -->
-              <li>
-                <a href="#" target="_blank">Empleados</a>
+              <li><a href="../../../../assets/Archivos/mision-vision/mision-vision.pdf" target="_blank">1.1 Misión y
+                  Visión</a></li>
+              <li><a href="../../../../assets/Archivos/lasceibas/manual_de_funciones_empleados_publicos.pdf"
+                  target="_blank">1.1 Funciones y Deberes</a></li>
+              <li><a routerLink="/estructura-organica">1.2 Estructura orgánica - Organigrama</a></li>
+              <li><a href="../../../../assets/Archivos/documentos-ceibas-pdf/GI-DA-09 Mapa de procesos.pdf"
+                  target="_blank">1.3 Mapas y cartas descriptivas de los
+                  procesos</a></li>
+              <li><a routerLink="/directorio-institucional">1.4 Directorio Institucional</a></li>
+
+              <li><b>1.5 Directorio de servidores públicos.</b>
+                <ul>
+                  <!-- ../../../../assets/Archivos/documentos-tranparencia/1.5/directorio_servidores_publicos_las_ceibas.html -->
+                  <li>
+                    <a href="#" target="_blank">Empleados</a>
+                  </li>
+                  <!-- ../../../../assets/Archivos/documentos-tranparencia/1.5/Consolidado_Contratistas_2023.xlsx -->
+                  <li>
+                    <a href="#" target="_blank">Contratistas</a>
+                  </li>
+                </ul>
+              <li><a routerLink="/entidades">1.6 Directorio de entidades</a></li>
+              <li><a
+                  href="../../../../assets/Archivos/documentos-tranparencia/1.7-directorio_de_agremiaciones_y_otros_grupos_de_interes.htm"
+                  target="_blank">1.7 Directorio de agremiaciones o asociaciones en las que
+                  participe</a></li>
+              <li><a routerLink="/atencion-usuario">1.8 Servicio al público, normas,
+                  formularios y protocolos de
+                  atención</a></li>
+              <li><a href="/sistema-integrado-de-gestion">1.9 Procedimientos que se siguen para tomar decisiones
+                  en las
+                  diferentes áreas</a></li>
+              <li><a href="./pqrs" target="_blank">1.10
+                  Mecanismo de presentación directa de solicitudes, quejas y reclamos o disposición
+                  del público en relación con acciones u omisiones del sujeto obligado</a></li>
+              <li><a href="/calendario#calendario">1.11 Calendario de actividades y eventos</a></li>
+              <li><a routerLink="/sala-prensa" target="_blank">1.12 Información sobre decisiones que puede afectar al
+                  público</a>
               </li>
-              <!-- ../../../../assets/Archivos/documentos-tranparencia/1.5/Consolidado_Contratistas_2023.xlsx -->
-              <li>
-                <a href="#" target="_blank">Contratistas</a>
-              </li>
-            </ul>
-          <li><a routerLink="/entidades">1.6 Directorio de entidades</a></li>
-          <li><a
-              href="../../../../assets/Archivos/documentos-tranparencia/1.7-directorio_de_agremiaciones_y_otros_grupos_de_interes.htm"
-              target="_blank">1.7 Directorio de agremiaciones o asociaciones en las que
-              participe</a></li>
-          <li><a routerLink="/atencion-usuario">1.8 Servicio al público, normas,
-              formularios y protocolos de
-              atención</a></li>
-          <li><a href="/sistema-integrado-de-gestion">1.9 Procedimientos que se siguen para tomar decisiones
-              en las
-              diferentes áreas</a></li>
-          <li><a href="./pqrs" target="_blank">1.10
-              Mecanismo de presentación directa de solicitudes, quejas y reclamos o disposición
-              del público en relación con acciones u omisiones del sujeto obligado</a></li>
-          <li><a href="/calendario#calendario">1.11 Calendario de actividades y eventos</a></li>
-          <li><a routerLink="/sala-prensa" target="_blank">1.12 Información sobre decisiones que puede afectar al
-              público</a>
-          </li>
-          <li><a routerLink="/entes-autoridades"> 1.13 Entes y autoridades que lo vigilan</a></li>
-          <li><a href="../../../../assets/Archivos/documentos-tranparencia/jUSTIFICACIÓN DEL ITEM 1.14.pdf"
-              target="_blank">
-              1.14 Publicación de hojas de vida</a></li>
-        </div>
-      </div>
-    </div><br>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingTwo">
-        <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed2 = !isCollapsed2"
-          [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseTwo">
-          <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/normativa.png"
-              alt="" width="50px" height="50px" hspace="10px">2. Normativa</h4>
-        </button>
-      </h2>
-      <div id="collapseTwo" [collapse]="isCollapsed2" class="accordion-collapse" aria-labelledby="headingTwo"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body custom-accordion-body">
-          <li><b> 2.1 Normativa de la Entidad o Autoridad</b></li>
-          <ul>
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
-                target="_blank">2.1.1 Leyes</a></li>
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
-                target="_blank">2.1.2 Decreto único reglamento</a></li>
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
-                target="_blank">2.1.3 Normativa aplicable</a></li>
-            <li><a href="http://svrpubindc.imprenta.gov.co/diario/" target="_blank">2.1.4
-                Vínculo al Diario o gaceta oficial</a></li>
-            <li><a><b>2.1.5 Politicas, lineamientos y manuales </b></a></li>
-            <li><a href="/sistema-integrado-de-gestion">2.1.5.A Políticas y lineamientos sectoriales</a></li>
-            <li><a href="/sistema-integrado-de-gestion">1.5.B Manuales</a></li>
-            <li><a href="/sistema-integrado-de-gestion">2.1.5.C Otros lineamientos y manuales que le
-                aplique</a></li>
-          </ul>
-          <li><b> 2.2 Búsqueda de Normas</b></li>
-          <ul>
-            <li><a href="https://www.suin-juriscol.gov.co/" target="_blank">2.2.1. Sistema
-                Único de Información Normativa - SUIN</a></li>
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
-                target="_blank">2.2.2. Sistema de búsquedas de normas, propio de la entidad</a></li>
-          </ul>
-          <li><b>2.3 Proyectos de normas para comentarios</b></li>
-          <ul>
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/CONCEPTO JURÍDICO-EPN-PROCESO DE IMPLEMENTACIÓN IND. DE TRANSP. Y ACCESO A LA INFO. PÚBLICA.pdf"
-                target="_blank">2.3.1. Proyectos Normativos</a></li>
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/CONCEPTO JURÍDICO-EPN-PROCESO DE IMPLEMENTACIÓN IND. DE TRANSP. Y ACCESO A LA INFO. PÚBLICA.pdf"
-                target="_blank">2.3.2 Comentarios y documento de respuesta a comentarios</a>
-            </li>
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/CONCEPTO JURÍDICO-EPN-PROCESO DE IMPLEMENTACIÓN IND. DE TRANSP. Y ACCESO A LA INFO. PÚBLICA.pdf"
-                target="_blank">2.3.3. Participación ciudadana en la expedición de normas a
-                través el SECOP</a></li>
-          </ul>
-        </div>
-      </div>
-    </div><br>
-
-    <div class="accordion-item"> <!-- 3. Contratación -->
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed3 = !isCollapsed3"
-          [attr.aria-expanded]="!isCollapsed3" aria-controls="collapseThree">
-          <h4 class="custom-accordion-title"><img
-              src="../../../../assets/images/icons/iconos-sistema-integrado/contratacion.png" alt width="50px"
-              height="50px" hspace="10px">3. Contratación</h4>
-        </button>
-      </h2>
-      <div id="collapseThree" [collapse]="isCollapsed3" class="accordion-collapse" aria-labelledby="headingThree"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body custom-accordion-body">
-          <ul>
-            <li>
-              <a href="https://community.secop.gov.co/Public/App/AnnualPurchasingPlanManagementPublic/Index?currentLanguage=es-CO&Page=login&Country=CO&SkinName=CCE"
-                target="_blank ">
-                3.1 Plan anual de adquisiciones
-              </a>
-            </li>
-
-            <li>
-              <a href="https://community.secop.gov.co/Public/Common/GoogleReCaptcha/Index?previousUrl=https%3a%2f%2fcommunity.secop.gov.co%2fPublic%2fTendering%2fContractNoticeManagement%2fIndex%3fcurrentLanguage%3des-CO%26Page%3dlogin%26Country%3dCO%26SkinName%3dCCE"
-                target="_blank ">
-                3.2 Publicación de la información contractual
-              </a>
-            </li>
-
-            <li>
-              <a href="https://community.secop.gov.co/Public/Tendering/ContractNoticeManagement/Index?currentLanguage=es-CO&Page=login&Country=CO&SkinName=CCE"
-                target="_blank">
-                3.3 Publicación de la ejecución de los contratos
-              </a>
-            </li>
-
-            <li>
-              <a href="../../../../assets/Archivos/documentos-tranparencia/3/Manual de contratación.pdf" target="_blank">
-                3.4 Manual de contratación, adquisición y/o compras
-              </a>
-            </li>
-
-            <li>
-              <a href="../../../../assets/Archivos/documentos-tranparencia/3/Minuta Contrato[2773].pdf" target="_blank">
-                3.5 Formatos o modelos de contratos o pliegos tipo
-              </a>
-            </li>
-
-            <li>
-              <a href="../../../../assets/Archivos/documentos-tranparencia/3/ACUERDO_012_DE_2020.pdf" target="_blank">
-                3.6 Acuerdo 012 de 2020
-              </a>
-            </li>
-
-            <li>
-              <a href="../../../../assets/Archivos/documentos-tranparencia/3/ACUERDO_013_DE_2020.pdf" target="_blank">
-                3.7 Acuerdo 013 de 2020
-              </a>
-            </li>
-
-            <li>
-              <a href="../../../../assets/Archivos/documentos-tranparencia/3/ACUERDO_008_DE_2021.pdf" target="_blank">
-                3.8 Acuerdo 008 de 2021
-              </a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div><br> <!-- Fin Contratación -->
-    
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingFour">
-        <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed4 = !isCollapsed4"
-          [attr.aria-expanded]="!isCollapsed4" aria-controls="collapseFour">
-          <h4 class="custom-accordion-title"><img
-              src="../../../../assets/images/icons/iconos-sistema-integrado/presentacion-financiera.png" alt=""
-              width="50px" height="50px" hspace="10px">4. Planeación, presupuesto e informes</h4>
-        </button>
-      </h2>
-      <div id="collapseFour" [collapse]="isCollapsed4" class="accordion-collapse" aria-labelledby="headingFour"
-        data-bs-parent="#accordionExample">
-        <div class="accordion-body custom-accordion-body">
-          <li><b> 4.1 Presupuesto general de ingresos, gastos e inversión</b></li>
-          <ul>
-            <li><a routerLink="/presupuesto-anual" target="_blank"> 4.1.1 Presupuesto anual</a></li>
-            <li><a routerLink="/estado-financieros" target="_blank"> 4.1.2 Estados financieros</a></li>
-          </ul>
-          <li><a routerLink="/ejecucion-presupuestal" target="_blank">4.2 Ejecución presupuestal</a></li>
-          <li><a routerLink="/plan-accion" target="_blank">4.3 Plan de acción</a></li>
-          <li><a
-              href="../../../../assets/Archivos/documentos-tranparencia/4.4/PE-FR-08 INVENTARIO DE PROYECTOS 2023.html"
-              target="_blank">
-              4.4 Proyectos de inversión</a></li>
-          <li><a href="../../../../assets/Archivos/documentos-tranparencia/4.5/1. INFORME DE GESTION 2016-2019.pdf"
-              target="_blank"> 4.5 Informes de empalme</a></li>
-          <li><a routerLink="/sala-prensa" target="_blank"> 4.6 Información
-              pública y/o relevante</a></li>
-          <li><b> 4.7 Informe de gestión, evaluación y auditoría</b></li>
-          <ul>
-            <li><a routerLink="/informe-gestion" target="_blank"> 4.7.1. Informe de Gestión</a></li>
-            <li><a routerLink="/rendicion-cuentas" target="_blank"> 4.7.2. Informe de rendición de
-                cuentas </a></li>
-            <li><a routerLink="/rendicion-cuentas" target="_blank"> 4.7.3. Informe de rendición de
-                cuentas a la ciudadanía </a></li>
-            <li><a routerLink="/informe-control-interno" target="_blank"> 4.7.4 Informes a organismos
-                de inspección, vigilancia y control </a></li>
-            <li>
-              <a routerLink="/informe-control-interno" target="_blank"> 4.7.5 Planes de mejoramiento</a>
-            </li>
-            <li>
-              <a routerLink="/informe-comision-empalme" target="_blank"> 4.7.6 Informe de Gestión de Empalme
-                Administración Entrante</a>
-            </li>
-          </ul>
-          <li><b> 4.8 Informes de la oficina de control interno</b></li>
-          <ul>
-            <li><a routerLink="/informe-control-interno" target="_blank"> 4.8.1 Informe
-                pormenorizado </a></li>
-            <li><a routerLink="/informe-control-interno" target="_blank"> 4.8.2 Otros informes y/o
-                consultas a base de datos o sistemas de información </a></li>
-          </ul>
-
-          <li><a href="https://ekogui.defensajuridica.gov.co/Pages/inicio_bop.aspx" target="_blank"> 4.9 Informes
-              sobre Defensa pública y prevención del daño antijurídico</a>
-          </li>
-          <ul>
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/4.9.1/gj-mn-01_manual_de_politicas_de_prevencion_del_dano_antijuridico.docx.pdf"
-                target="_blank"> 4.9.1 Manual de políticas de prevención del daño antijurídico
-              </a></li>
-          </ul>
-
-          <a routerLink="/informes-trimestrales-pqr" target="_blank">4.10 Informes trimestrales sobre acceso a
-            información, quejas y reclamos</a>
-
-          <!--  
-          <li>
-            <ul>
-              <b>2022</b>
-              <button class="acordeon-boton" (click)="toggleAcordeon1()" [attr.aria-expanded]="desplegado1">
-                <i class="fa fa-angle-down" [ngClass]="{'rotado': desplegado1}" aria-hidden="true"></i>
-              </button>
-              <div class="acordeon-contenido" [ngClass]="{'desplegado': desplegado1}">
-                <li><a href="../../../../assets/Archivos/documentos-tranparencia/4.10/informepqrprimertrimestre2022.pdf"
-                    target="_blank"> Primer trimestre</a></li>
-                <li><a
-                    href="../../../../assets/Archivos/documentos-tranparencia/4.10/informepqrsegundotrimestre2022.pdf"
-                    target="_blank"> Segundo trimestre </a></li>
-                <li><a href="../../../../assets/Archivos/documentos-tranparencia/4.10/informepqrtecertrimestre2022.pdf"
-                    target="_blank"> Tercer trimestre</a></li>
-              </div>
-            </ul>
-            <ul>
-              <b>2021</b>
-              <button class="acordeon-boton" (click)="toggleAcordeon2()" [attr.aria-expanded]="desplegado2">
-                <i class="fa fa-angle-down" [ngClass]="{'rotado': desplegado2}" aria-hidden="true"></i>
-              </button>
-              <div class="acordeon-contenido" [ngClass]="{'desplegado': desplegado2}">
-                <li><a
-                    href="../../../../assets/Archivos/documentos-tranparencia/4.10/1. INFORME ATENCIÓN AL CIUDADANO PRIMER TRIMESTRE 2021 (1).pdf"
-                    target="_blank"> Primer trimestre</a></li>
-                <li><a
-                    href="../../../../assets/Archivos/documentos-tranparencia/4.10/2. INFORME ATENCIÓN AL CIUDADANO SEGUNDO TRIMESTRE 2021 (1).pdf"
-                    target="_blank"> Segundo trimestre </a></li>
-                <li><a
-                    href="../../../../assets/Archivos/documentos-tranparencia/4.10/3. INFORME ATENCIÓN AL CIUDADANO TERCERO TRIMESTRE 2021 (1).pdf"
-                    target="_blank"> Tercer trimestre</a></li>
-                <li><a
-                    href="../../../../assets/Archivos/documentos-tranparencia/4.10/4. INFORME ATENCIÓN AL CIUDADANO CUARTO TRIMESTRE 2021 (1).pdf"
-                    target="_blank"> Cuarto trimestre</a></li>
-              </div>
-            </ul>
-          </li>
-        -->
-
-        </div>
-
-      </div><br>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed5 = !isCollapsed5"
-            [attr.aria-expanded]="!isCollapsed5" aria-controls="collapseFive">
-            <h4 class="custom-accordion-title"><img
-                src="assets/images/icons/iconos-sistema-integrado/agente-de-servicio-al-cliente.png" alt="" width="50px"
-                height="50px" hspace="10px"> 5. Trámites</h4>
-          </button>
-        </h2>
-        <div id="collapseFive" [collapse]="isCollapsed5" class="accordion-collapse" aria-labelledby="headingFive"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><a routerLink="/atencion-usuario" target="_blank"> 5.1 Trámites y servicios</a>
-            </li>
-          </div>
-        </div>
-      </div><br>
-
-      <!-- ANTIGUO ACORDEON PARTICIPA  
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed6 = !isCollapsed6"
-            [attr.aria-expanded]="!isCollapsed6" aria-controls="collapseSix">
-            <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/equipo.png" alt
-                width="50px" height="50px" hspace="10px">6. Participa</h4>
-          </button>
-        </h2>
-        <div id="collapseSix" [collapse]="isCollapsed6" class="accordion-collapse" aria-labelledby="headingSix"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><b>6.1.1 Descripción general del menú participa</b></li>
-            <p style="color:#000"> Aquí encontrará información sobre los espacios, mecanismos y acciones que el DNP
-              implementa en cumplimiento de la política de participación ciudadana en la gestión pública, con el
-              propósito de fortalecer la vinculación de la ciudadanía, grupos de interés y de valor, en las
-              decisiones y acciones públicas, durante las fases del ciclo de la gestión pública (diagnóstico,
-              formulación, implementación, evaluación y seguimiento), a partir de lo establecido en la Ley 1757 de
-              2015, la Ley 1712 de 2014, la Ley 489 de 1998, el Decreto 1499 de 2017, la Resolución 1519 de 2020 del
-              Ministerio de Tecnologías de la información y las Comunicaciones, así como los lineamientos y
-              orientaciones del Departamento Administrativo de la Función Pública​.</p>
-            <ul>
-              <li><a href="/sistema-integrado-de-gestion" target="_blank"> Estrategia de participación
-                  ciudadana</a></li>
-              <li><a
-                  href="../../../../assets/Archivos/documentos-tranparencia/MENU PARTICIPA/participa/6.2.5.c. Calendario eventos.htm"
-                  target="_blank"> Cromograma de participación ciudadana </a></li>
-              <li><a
-                  href="../../../../assets/Archivos/documentos-tranparencia/MENU PARTICIPA/participa/Cronograma Rendición de Cuentas - COMUNAS.htm"
-                  target="_blank"> Resultados de la participación ciudadana (Formato de
-                  descarga)</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma%202022-2_EPN.pdf"
-                  target="_blank"> Sección Normativa </a></li>
-              <li><a
-                  href="../../../../assets/Archivos/documentos-tranparencia/MENU PARTICIPA/6.2.2b/Orientaciones para promover la participación ciudadana - Julio 2018.pdf"
-                  target="_blank"> Caja de Herramientas</a></li>
-              <li><a
-                  href="https://docs.google.com/forms/d/1FfCaNIPgF6J4pRVrpamG3EuEyExKdg-exwrIGOcEFbw/viewform?edit_requested=true"
-                  target="_blank"> Encuesta de participación ciudadana</a></li>
-            </ul>
-            <li><a href="/sistema-integrado-de-gestion" target="_blank"> 6.1.3. Publicar la Estrategia de
-                participación
-                ciudadana </a></li>
-            <li><a href="/sistema-integrado-de-gestion" target="_blank"> 6.1.4. Publicar la Estrategia anual de
-                rendición de
-                cuentas</a></li>
-            <li><a routerLink="/plan-anticorrupcion-atencion-ciudadano" target="_blank"> 6.1.5.
-                Publicar el Plan Anticorrupción y de Atención al Ciudadano (PAAC).</a></li>
-            <li><a routerLink="/rendicion-cuentas" target="_blank"> 6.1.6. Publicación de
-                informes de rendición de cuentas generales</a></li>
-            <li><a href="https://docs.google.com/forms/d/1pG_gEvzl1nU0x-GiuC2YhGd0J44MJL3cXyUsRPx3-h8/edi"
-                target="_blank"> 6.1.7. Convocatorias para la participación de la ciudadanía
-                y grupos de valor en los espacios, instancias o acciones que ofrece la entidad</a></li>
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/MENU PARTICIPA/participa/6.2.5.c. Calendario eventos.htm"
-                target="_blank"> 6.1.8.Calendario de la estrategia anual de participación
-                ciudadana</a></li>
-            <li><a href="https://docs.google.com/forms/d/1pG_gEvzl1nU0x-GiuC2YhGd0J44MJL3cXyUsRPx3-h8/edit"
-                target="_blank"> 6.1.9. Formulario de inscripción ciudadana a procesos de
-                participación, instancias o acciones que ofrece la entidad </a></li>
-            <li><a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScMrc8MzAy7LZ5PW7BikirBRdZ-TE8oFyUS-qxKAYD5dV0zSg/viewform?usp=sf_link"
-                target="_blank" rel="noopener noreferrer"> 6.1.10. Canal de interacción deliberatoria para la
-                participación ciudadana </a></li>
-            <ul><a routerLink="/participa" target="_blank"> 6.2 Estructura y secciones del menú "PARTICIPA"</a>
-            </ul>
-          </div>
-        </div>
-      </div>
-    -->
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSix">
-          <a href="./participa" target="_blank" class="accordion-button custom-accordion-button no-arrow">
-            <h4 class="custom-accordion-title">
-              <img src="assets/images/icons/iconos-sistema-integrado/equipo.png" alt="" width="50px" height="50px"
-                hspace="10px">
-              6. Participa
-            </h4>
-          </a>
-        </h2>
-      </div>
-
-
-      <br>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="valoracion-documental">
-          <button class="accordion-button custom-accordion-button" type="button" (click)="toggleCollapse()"
-            [ngClass]="{'collapsed': isCollapsed7}" aria-controls="collapseSeven">
-            <h4 class="custom-accordion-title"><img
-                src="../../../../assets/images/icons/iconos-sistema-integrado/carpeta.png" alt="" width="50px"
-                height="50px" hspace="10px">7. Datos Abiertos</h4>
-          </button>
-        </h2>
-        <div #valoracionDocumental id="valoracion-documental" [collapse]="isCollapsed7" class="accordion-collapse"
-          aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><b>7.1 Instrumentos de gestión de la información </b> </li>
-            <ul>
-              <li><a
-                  href="../../../../assets/Archivos/documentos-tranparencia//7/7.15/SI-FR-09 LISTADO DE ACTIVOS 2022 V1 (2).pdf"
-                  target="_blank"> 7.1.1 Registros de activos de información</a></li>
-              <li><a
-                  href="../../../../assets/Archivos/documentos-tranparencia/Índice de información clasificada y reservada.pdf"
-                  target="_blank"> 7.1.2 Índice de información clasificada y reservada </a>
-              </li>
-              <li><a
-                  href="../../../../assets/Archivos/documentos-tranparencia/ga-mt-t03_matriz_instrumentos_de_gestion_de_informacion (4).htm"
-                  target="_blank"> 7.1.3. Esquema de publicación de la información </a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.2 PGD.pdf" target="_blank"> 7.1.4
-                  Programa de gestión documental </a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/TRDEPN2017DEFINITIVAS (1) (1).htm"
+              <li><a routerLink="/entes-autoridades"> 1.13 Entes y autoridades que lo vigilan</a></li>
+              <li><a href="../../../../assets/Archivos/documentos-tranparencia/jUSTIFICACIÓN DEL ITEM 1.14.pdf"
                   target="_blank">
-                  7.1.5. Tablas de retención documental</a></li>
+                  1.14 Publicación de hojas de vida</a></li>
             </ul>
-            <li><b> 7.1.5. Tablas de valoracion documental - TVD</b></li>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section2" class="accordion-toggle">
+          <label for="section2" class="accordion-header">
+            <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/normativa.png"
+                alt="" width="40px" height="40px" hspace="5px">2. Normativa</h4>
+          </label>
+          <div class="accordion-content">
             <ul>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_1 (1).htm"
-                  target="_blank"> Periodo 1</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_1 (2).htm"
-                  target="_blank"> Periodo 2</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_3.htm" target="_blank">
-                  Periodo 3</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_4.htm" target="_blank">
-                  Periodo 4</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_5.htm" target="_blank">
-                  Periodo 5</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_6.htm" target="_blank">
-                  Periodo 6</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_7.htm" target="_blank">
-                  Periodo 7</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_8.htm" target="_blank">
-                  Periodo 8</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_9.htm" target="_blank">
-                  Periodo 9</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_10.htm" target="_blank">
-                  Periodo 10</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_11.htm" target="_blank">
-                  Periodo 11</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_12.htm" target="_blank">
-                  Periodo 12</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_13.htm" target="_blank">
-                  Periodo 13</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_14 (1).htm"
-                  target="_blank"> Periodo 14</a></li>
+              <li><b> 2.1 Normativa de la Entidad o Autoridad</b></li>
+              <ul>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
+                    target="_blank">2.1.1 Leyes</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
+                    target="_blank">2.1.2 Decreto único reglamento</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
+                    target="_blank">2.1.3 Normativa aplicable</a></li>
+                <li><a href="http://svrpubindc.imprenta.gov.co/diario/" target="_blank">2.1.4
+                    Vínculo al Diario o gaceta oficial</a></li>
+                <li><a><b>2.1.5 Politicas, lineamientos y manuales </b></a></li>
+                <li><a href="/sistema-integrado-de-gestion">2.1.5.A Políticas y lineamientos sectoriales</a></li>
+                <li><a href="/sistema-integrado-de-gestion">1.5.B Manuales</a></li>
+                <li><a href="/sistema-integrado-de-gestion">2.1.5.C Otros lineamientos y manuales que le
+                    aplique</a></li>
+              </ul>
+              <li><b> 2.2 Búsqueda de Normas</b></li>
+              <ul>
+                <li><a href="https://www.suin-juriscol.gov.co/" target="_blank">2.2.1. Sistema
+                    Único de Información Normativa - SUIN</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
+                    target="_blank">2.2.2. Sistema de búsquedas de normas, propio de la entidad</a></li>
+              </ul>
+              <li><b>2.3 Proyectos de normas para comentarios</b></li>
+              <ul>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia/CONCEPTO JURÍDICO-EPN-PROCESO DE IMPLEMENTACIÓN IND. DE TRANSP. Y ACCESO A LA INFO. PÚBLICA.pdf"
+                    target="_blank">2.3.1. Proyectos Normativos</a></li>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia/CONCEPTO JURÍDICO-EPN-PROCESO DE IMPLEMENTACIÓN IND. DE TRANSP. Y ACCESO A LA INFO. PÚBLICA.pdf"
+                    target="_blank">2.3.2 Comentarios y documento de respuesta a comentarios</a>
+                </li>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia/CONCEPTO JURÍDICO-EPN-PROCESO DE IMPLEMENTACIÓN IND. DE TRANSP. Y ACCESO A LA INFO. PÚBLICA.pdf"
+                    target="_blank">2.3.3. Participación ciudadana en la expedición de normas a
+                    través el SECOP</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section3" class="accordion-toggle">
+          <label for="section3" class="accordion-header">
+            <h4 class="custom-accordion-title"><img
+                src="../../../../assets/images/icons/iconos-sistema-integrado/contratacion.png" alt width="40px"
+                height="40px" hspace="5px">3. Contratación</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li>
+                <a href="https://community.secop.gov.co/Public/App/AnnualPurchasingPlanManagementPublic/Index?currentLanguage=es-CO&Page=login&Country=CO&SkinName=CCE"
+                  target="_blank ">
+                  3.1 Plan anual de adquisiciones
+                </a>
+              </li>
+
+              <li>
+                <a href="https://community.secop.gov.co/Public/Common/GoogleReCaptcha/Index?previousUrl=https%3a%2f%2fcommunity.secop.gov.co%2fPublic%2fTendering%2fContractNoticeManagement%2fIndex%3fcurrentLanguage%3des-CO%26Page%3dlogin%26Country%3dCO%26SkinName%3dCCE"
+                  target="_blank ">
+                  3.2 Publicación de la información contractual
+                </a>
+              </li>
+
+              <li>
+                <a href="https://community.secop.gov.co/Public/Tendering/ContractNoticeManagement/Index?currentLanguage=es-CO&Page=login&Country=CO&SkinName=CCE"
+                  target="_blank">
+                  3.3 Publicación de la ejecución de los contratos
+                </a>
+              </li>
+
+              <li>
+                <a href="../../../../assets/Archivos/documentos-tranparencia/3/Manual de contratación.pdf"
+                  target="_blank">
+                  3.4 Manual de contratación, adquisición y/o compras
+                </a>
+              </li>
+
+              <li>
+                <a href="../../../../assets/Archivos/documentos-tranparencia/3/Minuta Contrato[2773].pdf"
+                  target="_blank">
+                  3.5 Formatos o modelos de contratos o pliegos tipo
+                </a>
+              </li>
+
+              <li>
+                <a href="../../../../assets/Archivos/documentos-tranparencia/3/ACUERDO_012_DE_2020.pdf" target="_blank">
+                  3.6 Acuerdo 012 de 2020
+                </a>
+              </li>
+
+              <li>
+                <a href="../../../../assets/Archivos/documentos-tranparencia/3/ACUERDO_013_DE_2020.pdf" target="_blank">
+                  3.7 Acuerdo 013 de 2020
+                </a>
+              </li>
+
+              <li>
+                <a href="../../../../assets/Archivos/documentos-tranparencia/3/ACUERDO_008_DE_2021.pdf" target="_blank">
+                  3.8 Acuerdo 008 de 2021
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section4" class="accordion-toggle">
+          <label for="section4" class="accordion-header">
+            <h4 class="custom-accordion-title"><img
+                src="../../../../assets/images/icons/iconos-sistema-integrado/presentacion-financiera.png" alt=""
+                width="40px" height="40px" hspace="5px">4. Planeación, presupuesto e informes</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li><b> 4.1 Presupuesto general de ingresos, gastos e inversión</b></li>
+              <ul>
+                <li><a routerLink="/presupuesto-anual" target="_blank"> 4.1.1 Presupuesto anual</a></li>
+                <li><a routerLink="/estado-financieros" target="_blank"> 4.1.2 Estados financieros</a></li>
+              </ul>
+              <li><a routerLink="/ejecucion-presupuestal" target="_blank">4.2 Ejecución presupuestal</a></li>
+              <li><a routerLink="/plan-accion" target="_blank">4.3 Plan de acción</a></li>
+              <li><a
+                  href="../../../../assets/Archivos/documentos-tranparencia/4.4/PE-FR-08 INVENTARIO DE PROYECTOS 2023.html"
+                  target="_blank">
+                  4.4 Proyectos de inversión</a></li>
+              <li><a href="../../../../assets/Archivos/documentos-tranparencia/4.5/1. INFORME DE GESTION 2016-2019.pdf"
+                  target="_blank"> 4.5 Informes de empalme</a></li>
+              <li><a routerLink="/sala-prensa" target="_blank"> 4.6 Información
+                  pública y/o relevante</a></li>
+              <li><b> 4.7 Informe de gestión, evaluación y auditoría</b></li>
+              <ul>
+                <li><a routerLink="/informe-gestion" target="_blank"> 4.7.1. Informe de Gestión</a></li>
+                <li><a routerLink="/rendicion-cuentas" target="_blank"> 4.7.2. Informe de rendición de
+                    cuentas </a></li>
+                <li><a routerLink="/rendicion-cuentas" target="_blank"> 4.7.3. Informe de rendición de
+                    cuentas a la ciudadanía </a></li>
+                <li><a routerLink="/informe-control-interno" target="_blank"> 4.7.4 Informes a organismos
+                    de inspección, vigilancia y control </a></li>
+                <li>
+                  <a routerLink="/informe-control-interno" target="_blank"> 4.7.5 Planes de mejoramiento</a>
+                </li>
+                <li>
+                  <a routerLink="/informe-comision-empalme" target="_blank"> 4.7.6 Informe de Gestión de Empalme
+                    Administración Entrante</a>
+                </li>
+              </ul>
+              <li><b> 4.8 Informes de la oficina de control interno</b></li>
+              <ul>
+                <li><a routerLink="/informe-control-interno" target="_blank"> 4.8.1 Informe
+                    pormenorizado </a></li>
+                <li><a routerLink="/informe-control-interno" target="_blank"> 4.8.2 Otros informes y/o
+                    consultas a base de datos o sistemas de información </a></li>
+              </ul>
+
+              <li><a href="https://ekogui.defensajuridica.gov.co/Pages/inicio_bop.aspx" target="_blank"> 4.9 Informes
+                  sobre Defensa pública y prevención del daño antijurídico</a>
+              </li>
+              <ul>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia/4.9.1/gj-mn-01_manual_de_politicas_de_prevencion_del_dano_antijuridico.docx.pdf"
+                    target="_blank"> 4.9.1 Manual de políticas de prevención del daño antijurídico
+                  </a></li>
+              </ul>
+
+              <a routerLink="/informes-trimestrales-pqr" target="_blank">4.10 Informes trimestrales sobre acceso a
+                información, quejas y reclamos</a>
               <br>
-              <li><a href="https://www.gov.co/buscador/las%20ceibas" target="_blank" rel="noopener noreferrer"> 7.2
-                  Sección de datos abiertos</a></li>
             </ul>
           </div>
         </div>
-      </div><br>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingEight">
-          <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed8 = !isCollapsed8"
-            [attr.aria-expanded]="!isCollapsed8" aria-controls="collapseEight">
-            <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/formacion.png"
-                alt="" width="50px" height="50px" hspace="10px">8. Información específica para grupos de interés</h4>
-          </button>
-        </h2>
-        <div id="collapseEight" [collapse]="isCollapsed8" class="accordion-collapse" aria-labelledby="headingEight"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/8/CA-MN-U01 MANUAL DE ATENCION INCLUYENTE.pdf"
-                target="_blank" rel="noopener noreferrer"> 8.1. Información para Grupos Específicos </a></li>
-            <li><a routerLink="/ninos" target="_blank" rel="noopener noreferrer">8.1.1. Información para niños, niñas
-                y
-                adolescentes </a></li>
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/8/CA-MN-U01 MANUAL DE ATENCION INCLUYENTE.pdf"
-                target="_blank " rel="noopener noreferrer"> 8.1.2. Información para Mujeres</a></li>
-          </div>
-        </div>
-      </div><br>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingNine">
-          <button class="accordion-button custom-accordion-button" type="button" (click)="isCollapsed9 = !isCollapsed9"
-            [attr.aria-expanded]="!isCollapsed9" aria-controls="collapseNine">
-            <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/prestamo.png"
-                alt="" width="50px" x height="50px" hspace="10px">9. Obligación de reporte de información específica por
-              parte de la entidad</h4>
-          </button>
-        </h2>
-        <div id="collapseNine" [collapse]="isCollapsed9" class="accordion-collapse" aria-labelledby="headingNine"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
-                target="_blank"> 9.1. Normatividad Especial </a></li>
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/9/Punto 9 .pdf" target="_blank"> Tarifas
-                para Servicios de Acueducto y Aguas Residuales</a></li>
-            <li><b>Indicadores de Calidad Aguas</b></li>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section5" class="accordion-toggle">
+          <label for="section5" class="accordion-header">
+            <h4 class="custom-accordion-title"><img
+                src="assets/images/icons/iconos-sistema-integrado/agente-de-servicio-al-cliente.png" alt="" width="40px"
+                height="40px" hspace="5px">5. Trámites</h4>
+          </label>
+          <div class="accordion-content">
             <ul>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/9/IRCA 2022.pdf" target="_blank">
-                  2022</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia/9/IRCA 2021 Punto 9 .pdf"
-                  target="_blank"> 2021</a></li>
-              <li><a href="../../../../assets/Archivos/documentos-tranparencia//9/IRCA 2020 - Punto 9.pdf"
-                  target="_blank"> 2020</a></li>
+              <li><a routerLink="/atencion-usuario" target="_blank"> 5.1 Trámites y servicios</a>
+              </li>
             </ul>
           </div>
         </div>
-      </div><br>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTen">
-          <button class="accordion-button custom-accordion-button" type="button"
-            (click)="isCollapsed10 = !isCollapsed10" [attr.aria-expanded]="!isCollapsed10" aria-controls="collapseTen">
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section6" class="accordion-toggle">
+          <label for="section6" class="accordion-header">
+            <h4 class="custom-accordion-title">
+              <img src="assets/images/icons/iconos-sistema-integrado/equipo.png" alt="" width="40px" height="40px"
+                hspace="5px">6. Participa
+            </h4>
+          </label>
+          <div class="accordion-content">
+            <a href="./participa" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section7" class="accordion-toggle">
+          <label for="section7" class="accordion-header">
+            <h4 class="custom-accordion-title"><img
+                src="../../../../assets/images/icons/iconos-sistema-integrado/carpeta.png" alt="" width="40px"
+                height="40px" hspace="5px">7. Datos Abiertos</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li><b>7.1 Instrumentos de gestión de la información </b> </li>
+              <ul>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia//7/7.15/SI-FR-09 LISTADO DE ACTIVOS 2022 V1 (2).pdf"
+                    target="_blank"> 7.1.1 Registros de activos de información</a></li>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia/Índice de información clasificada y reservada.pdf"
+                    target="_blank"> 7.1.2 Índice de información clasificada y reservada </a>
+                </li>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia/ga-mt-t03_matriz_instrumentos_de_gestion_de_informacion (4).htm"
+                    target="_blank"> 7.1.3. Esquema de publicación de la información </a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.2 PGD.pdf" target="_blank"> 7.1.4
+                    Programa de gestión documental </a></li>
+                <li><a
+                    href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/TRDEPN2017DEFINITIVAS (1) (1).htm"
+                    target="_blank">
+                    7.1.5. Tablas de retención documental</a></li>
+              </ul>
+              <li><b> 7.1.5. Tablas de valoracion documental - TVD</b></li>
+              <ul>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_1 (1).htm"
+                    target="_blank">
+                    Periodo 1</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_1 (2).htm"
+                    target="_blank">
+                    Periodo 2</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_3.htm" target="_blank">
+                    Periodo 3</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_4.htm" target="_blank">
+                    Periodo 4</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_5.htm" target="_blank">
+                    Periodo 5</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_6.htm" target="_blank">
+                    Periodo 6</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_7.htm" target="_blank">
+                    Periodo 7</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_8.htm" target="_blank">
+                    Periodo 8</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_9.htm" target="_blank">
+                    Periodo 9</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_10.htm" target="_blank">
+                    Periodo 10</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_11.htm" target="_blank">
+                    Periodo 11</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_12.htm" target="_blank">
+                    Periodo 12</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_13.htm" target="_blank">
+                    Periodo 13</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/7/7.15/Periodo_14 (1).htm"
+                    target="_blank">
+                    Periodo 14</a></li>
+                <br>
+                <li><a href="https://www.gov.co/buscador/las%20ceibas" target="_blank" rel="noopener noreferrer"> 7.2
+                    Sección de datos abiertos</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section8" class="accordion-toggle">
+          <label for="section8" class="accordion-header">
+            <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/formacion.png"
+                alt="" width="40px" height="40px" hspace="5px">8. Información específica para grupos de interés</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li><a
+                  href="../../../../assets/Archivos/documentos-tranparencia/8/CA-MN-U01 MANUAL DE ATENCION INCLUYENTE.pdf"
+                  target="_blank" rel="noopener noreferrer"> 8.1. Información para Grupos Específicos </a></li>
+              <li><a routerLink="/ninos" target="_blank" rel="noopener noreferrer">8.1.1. Información para niños, niñas
+                  y
+                  adolescentes </a></li>
+              <li><a
+                  href="../../../../assets/Archivos/documentos-tranparencia/8/CA-MN-U01 MANUAL DE ATENCION INCLUYENTE.pdf"
+                  target="_blank " rel="noopener noreferrer"> 8.1.2. Información para Mujeres</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section9" class="accordion-toggle">
+          <label for="section9" class="accordion-header">
+            <h4 class="custom-accordion-title"><img src="assets/images/icons/iconos-sistema-integrado/prestamo.png"
+                alt="" width="40px" x height="40px" hspace="5px">9. Obligación de reporte de información específica por
+              parte de la entidad</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li><a href="../../../../assets/Archivos/documentos-tranparencia/normogrma/Normograma 2023_1.html"
+                  target="_blank"> 9.1. Normatividad Especial </a></li>
+              <li><a href="../../../../assets/Archivos/documentos-tranparencia/9/Punto 9 .pdf" target="_blank"> Tarifas
+                  para Servicios de Acueducto y Aguas Residuales</a></li>
+              <li><b>Indicadores de Calidad Aguas</b></li>
+              <ul>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/9/IRCA 2022.pdf" target="_blank">
+                    2022</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia/9/IRCA 2021 Punto 9 .pdf"
+                    target="_blank">
+                    2021</a></li>
+                <li><a href="../../../../assets/Archivos/documentos-tranparencia//9/IRCA 2020 - Punto 9.pdf"
+                    target="_blank"> 2020</a></li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section10" class="accordion-toggle">
+          <label for="section10" class="accordion-header">
             <h4 class="custom-accordion-title"><img
                 src="../../../../assets/images/icons/iconos-sistema-integrado/informacion-personal.png" alt=""
-                width="50px" height="50px" hspace="10px">10. Información tributaria en entidades</h4>
-          </button>
-        </h2>
-        <div id="collapseTen" [collapse]="isCollapsed10" class="accordion-collapse" aria-labelledby="headingTen"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/10/Punto 10.pdf" target="_blank"> 10.1
-                Procesos de recaudo de rentas locales </a></li>
-            <li><a href="../../../../assets/Archivos/documentos-tranparencia/10/Punto 10.pdf" target="_blank"> 10.2.
-                Tarifas de liquidación del Impuesto de Industria y Comercio (ICA)
-              </a></li>
-          </div>
-        </div>
-      </div><br>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingEleven">
-          <button class="accordion-button custom-accordion-button" type="button"
-            (click)="isCollapsed11 = !isCollapsed11" [attr.aria-expanded]="!isCollapsed11"
-            aria-controls="collapseEleven">
-            <h4 class="custom-accordion-title"><img
-                src="../../../../assets/images/icons/iconos-sistema-integrado/email.png" alt width="50px" height="50px"
-                hspace="10px">11. Menú "Atención al Servicio de la Ciudadanía"</h4>
-          </button>
-        </h2>
-        <div id="collapseEleven" [collapse]="isCollapsed11" class="accordion-collapse" aria-labelledby="headingEleven"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><a href="/atencion-usuario" target="_blank "> 11.1. Trámites, Otros
-                Procedimientos Administrativos y consultas de acceso a información pública </a></li>
-            <li><a href="/atencion-usuario#pida-cita"> 11.2. Canales de atención y Pida una cita</a></li>
-            <li><a href="./pqrs" target="_blank" rel="noopener noreferrer"> 11.3. PQRSD </a></li>
-            <li><a
-                href="../../../../assets/Archivos/documentos-tranparencia/11/Encuesta de Percepción Atención al Usuario 2021.pdf"
-                target="_blank"> 11.4. Encuesta de Percepción Atención al Usuario 2021
-              </a></li>
-          </div>
-        </div>
-      </div><br>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwelve">
-          <button class="accordion-button custom-accordion-button" type="button"
-            (click)="isCollapsed12 = !isCollapsed12" [attr.aria-expanded]="!isCollapsed12"
-            aria-controls="collapseTwelve">
-            <h4 class="custom-accordion-title"><img
-                src="../../../../assets/images/icons/iconos-sistema-integrado/periodico.png" alt width="50px"
-                height="50px" hspace="10px">12. Sección de noticias</h4>
-          </button>
-        </h2>
-        <div id="collapseTwelve" [collapse]="isCollapsed12" class="accordion-collapse" aria-labelledby="headingTwelve"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <li><a routerLink="/sala-prensa" target="_blank"> 12.1.
-                Sección de Noticias </a></li>
+                width="40px" height="40px" hspace="5px">10. Información tributaria en entidades</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li><a href="../../../../assets/Archivos/documentos-tranparencia/10/Punto 10.pdf" target="_blank"> 10.1
+                  Procesos de recaudo de rentas locales </a></li>
+              <li><a href="../../../../assets/Archivos/documentos-tranparencia/10/Punto 10.pdf" target="_blank"> 10.2.
+                  Tarifas de liquidación del Impuesto de Industria y Comercio (ICA)
+                </a></li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwelve">
-          <button class="accordion-button custom-accordion-button" type="button"
-            (click)="isCollapsed13 = !isCollapsed13" [attr.aria-expanded]="!isCollapsed13"
-            aria-controls="collapseTwelve">
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section11" class="accordion-toggle">
+          <label for="section11" class="accordion-header">
             <h4 class="custom-accordion-title"><img
-                src="../../../../assets/images/icons/iconos-sistema-integrado/periodico.png" alt width="50px"
-                height="50px" hspace="10px">13. Solicitudes Anonimas</h4>
-          </button>
-        </h2>
-        <div id="collapseTwelve" [collapse]="isCollapsed13" class="accordion-collapse" aria-labelledby="headingTwelve"
-          data-bs-parent="#accordionExample">
-          <div class="accordion-body custom-accordion-body">
-            <div class="table-container">
-              <table class="styled-table">
-                  <thead>
-                      <tr>
-                          <th>Solicitud</th>
-                          <th>Respuesta</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td><a href=""></a></td>
-                          <td><a href=""></a></td>
-                      </tr>
-                  </tbody>
-              </table>
+                src="../../../../assets/images/icons/iconos-sistema-integrado/email.png" alt width="40px" height="40px"
+                hspace="5px">11. Menú "Atención al Servicio de la Ciudadanía"</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li><a href="/atencion-usuario" target="_blank "> 11.1. Trámites, Otros
+                  Procedimientos Administrativos y consultas de acceso a información pública </a></li>
+              <li><a href="/atencion-usuario#pida-cita"> 11.2. Canales de atención y Pida una cita</a></li>
+              <li><a href="./pqrs" target="_blank" rel="noopener noreferrer"> 11.3. PQRSD </a></li>
+              <li><a
+                  href="../../../../assets/Archivos/documentos-tranparencia/11/Encuesta de Percepción Atención al Usuario 2021.pdf"
+                  target="_blank"> 11.4. Encuesta de Percepción Atención al Usuario 2021
+                </a></li>
+            </ul>
           </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section12" class="accordion-toggle">
+          <label for="section12" class="accordion-header">
+            <h4 class="custom-accordion-title"><img
+                src="../../../../assets/images/icons/iconos-sistema-integrado/periodico.png" alt width="40px"
+                height="40px" hspace="5px">12. Sección de noticias</h4>
+          </label>
+          <div class="accordion-content">
+            <ul>
+              <li><a routerLink="/sala-prensa" target="_blank"> 12.1.
+                  Sección de Noticias </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="accordion">
+        <div class="accordion-item">
+          <input type="checkbox" id="section13" class="accordion-toggle">
+          <label for="section13" class="accordion-header">
+            <h4 class="custom-accordion-title"><img
+                src="../../../../assets/images/icons/iconos-sistema-integrado/periodico.png" alt width="40px"
+                height="40px" hspace="5px">13. Solicitudes Anonimas</h4>
+          </label>
+          <div class="accordion-content">
+            <table class="styled-table">
+              <thead>
+                <tr>
+                  <th>Solicitud</th>
+                  <th>Respuesta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href=""></a></td>
+                  <td><a href=""></a></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
