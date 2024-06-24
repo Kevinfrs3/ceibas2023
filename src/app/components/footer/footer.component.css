@@ -10,15 +10,22 @@ p{
   color: #000000;
 }
 
-.cajas1 {
-  
+li a{
+  color: #0078B7;
+  font-size: 16px;
 }
 
 .main-footer {
   position: relative;
   height: 100%;
-  margin-top: 10px;
+  margin: auto;
   background-color: #ffffff;
+}
+.recuadro{
+  padding-top: 25px;
+  justify-content: center;
+ display: flex;
+
 }
 
 .card {
@@ -46,8 +53,10 @@ p strong {
   border-left: 4px solid #0078B7;
   padding-left: 20px;
 }
-
-
+.row h4 strong {
+  color: #0078B7;
+  font-size: 22px;
+}
 h2 strong{
   color: #0078B7;
 }
