@@ -62,15 +62,10 @@
 }
 
 .circulo-servicio {
-  width: 160px;
-  height: 160px;
+  width: 122px;
+  height: 122px;
   background-color: #00B4D7;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border: 1px solid #ffff;
   margin: auto;
   transition-duration: 0.4s;
   cursor: pointer;
