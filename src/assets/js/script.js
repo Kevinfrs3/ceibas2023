@@ -80,8 +80,13 @@
     var target = $(this).attr("data-target");
     $("html, body").animate({ scrollTop: $(target).offset().top }, 200); // Ajusta la velocidad aquí (300 ms)
   });
-  $(window).on("scroll", handleScroll);
-  handleScroll();
+  function handleScroll() {
+    console.log('Scrolling...');
+    $(window).on("scroll", handleScroll);
+    // Llama a la función handleScroll directamente
+    handleScroll();
+  }
+  
   e(".wow").length && new WOW({ mobile: !1 }).init(),
     e("#contact-form").length &&
       e("#contact-form").validate({

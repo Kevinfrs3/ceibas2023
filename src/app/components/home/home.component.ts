@@ -1,20 +1,24 @@
-import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  ViewChild,
+  ElementRef,
+} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-
-  constructor(private titulo: Title) { 
+  constructor(private titulo: Title) {
     titulo.setTitle('Las Ceibas | Empresas Públicas de Neiva E.S.P');
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   mostrarAlerta(event: Event) {
     event.preventDefault(); // Evita que se ejecute el comportamiento predeterminado del enlace
@@ -42,13 +46,15 @@ export class HomeComponent implements OnInit {
 
   redirigirAPago() {
     // Redirigir a la página de pago
-    window.open('https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=5916', '_blank');
+    window.open(
+      'https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=5916',
+      '_blank'
+    );
   }
-  
+
   showMockup = true;
 
   closeMockup() {
     this.showMockup = false;
   }
 }
-
