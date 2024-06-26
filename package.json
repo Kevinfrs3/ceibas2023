@@ -39,7 +39,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.6.4",
+    "jquery": "^3.7.1",
     "ng-bootstrap": "^1.6.3",
     "ng2-pdf-viewer": "^10.0.0",
     "ngx-bootstrap": "^10.2.0",
